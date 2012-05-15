@@ -1,10 +1,9 @@
 class PagesController < ApplicationController
 
 	def show
-		@page = Page.find(params[:id])
-		@title = @page.title
-		@description = @page.description
-		@name = @page.name
+		@title = page.title
+		@description = page.description
+		@name = page.name
 		@notice = "!!!!!"
 	end
 
@@ -12,28 +11,35 @@ class PagesController < ApplicationController
   	@pages = Page.all
   end
 
-  def portfolio
-  end
-
-  def about
-  end
-
   def new
-  	@page = Page.new
+  	page = Page.new
   end
 
-  def create 
-  	@page = Page.new params[:page]
-  	if @page.save!
-  		redirect_to page_path(@page)
+  def create
+  	if page.save!
+  		redirect_to page_path(page)
   	else
   		render :action => :new
   	end
   end
 
-    def destroy
-  	@page = Page.find(params[:id])
-  	@page.destroy
+  def edit
+  end
+
+  def update
+  	redirect_to page_path(page)
+  end
+
+  def destroy
+  	page.destroy
   	redirect_to pages_path
   end
+
+  private
+
+  def page
+  	page ||= params[:id] ? Page.find(params[:id]) : Page.new(params[:page])
+  end
+  helper_method :page
+
 end

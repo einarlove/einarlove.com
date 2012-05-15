@@ -2,7 +2,7 @@
 %table
 	%th name
 	%th title
-	%th type
+	%th layout
 	%th description
 	%th visible
 	%th image
@@ -12,12 +12,16 @@
 		%tr
 			%td= page.name
 			%td= page.title
-			%td= page.type
+			%td= page.layout
 			%td= page.description
 			%td= page.visible
 			%td= page.image
 			%td= truncate(page.body, :length => 30)
 			%td= page.slug
+			%td= button_to "Edit", edit_page_path(page), method: :get
+			%td= button_to "Delete", page, :method => :delete
+
+=link_to "Create new page", new_page_path
 
 
 
