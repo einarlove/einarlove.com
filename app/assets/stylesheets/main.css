@@ -1,0 +1,132 @@
+@import url("reset.css");
+
+/* ------------- */
+/*   Universal   */
+/* ------------- */
+
+body{
+	font: 14px/1.5em "Trebuchet MS", Futura sans-serif normal;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4, header nav, footer{
+	font-family: "Pill Gothic 300mg", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-color:#e0e0e0;
+}
+header, section, footer{
+	width:900px;
+	margin: 0 auto;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+/* ------------- */
+/*   Header      */
+/* ------------- */
+
+header{
+	position: relative;
+	height: 150px;
+}
+header hgroup a{
+	font: 0/0 a;
+	background-image: url("emblem.png");
+	height: 34px;
+	width: 130px;
+	position: absolute;
+	top: 56px;
+}
+header nav{
+	position: absolute;
+	right: 0;
+	top: 65px;
+}
+header nav li {
+	display:inline;
+	margin-left:45px;
+	font-size: 12px;
+	font-weight:normal;
+}
+header nav a{
+	padding: 7px 0;
+	border-color: gray;
+}
+header nav .current_page, header nav a:hover{
+-webkit-transition: border-color .4s ease-out;
+   -moz-transition: border-color .4s ease-out;
+    -ms-transition: border-color .4s ease-out;
+     -o-transition: border-color .4s ease-out;
+        transition: border-color .4s ease-out;
+	border-bottom: 3px black solid;
+}
+/* ------------- */
+/*   Section     */
+/* ------------- */
+
+section{
+	overflow: auto;
+}
+.one_column{
+	width:290px;
+	float:left;
+}
+.two_columns{
+	width: 595px;
+	float:left;
+}
+.two_columns + .one_column, .one_column + .two_columns{
+	margin-left:15px;
+}
+section > h1,article > h1{
+	font-size: 18px;
+	border-top: #e0e0e0 1px solid;
+	border-bottom: #e0e0e0 1px solid;
+	padding: 30px 0 26px 0;
+	margin-bottom: 1em;
+}
+article p{
+	margin-top: 1em;
+	color: #333;
+}
+
+
+/* ------------ */
+/*   Footer     */
+/* ------------ */
+
+footer{
+	border-top: #e0e0e0 1px solid;
+	padding:15px 0;
+	margin:50px auto;
+	font-size: 9px;
+	letter-spacing:0.15em;
+}
+footer       div{float:left}
+footer div + div{float:right}
+footer span{
+	font-weight: normal;
+}
+
+/* ------------ */
+/*   Extra      */
+/* ------------ */
+
+::-moz-selection, ::selection {
+	background:black;
+	color: white;
+}
+th{
+	font-family: "Pill Gothic 300mg", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-color:#e0e0e0;
+	padding-right: 15px;
+}
+td{
+	font-size: 12px;
+	padding-right: 15px;
+}
+

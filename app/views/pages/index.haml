@@ -1,0 +1,23 @@
+%h1 Page sitemap
+%table
+	%th name
+	%th title
+	%th type
+	%th description
+	%th visible
+	%th image
+	%th body
+	%th slug
+	- @pages.each do |page|
+		%tr
+			%td= page.name
+			%td= page.title
+			%td= page.type
+			%td= page.description
+			%td= page.visible
+			%td= page.image
+			%td= truncate(page.body, :length => 30)
+			%td= page.slug
+
+
+
