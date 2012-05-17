@@ -2,6 +2,14 @@ Einarlove::Application.routes.draw do
 
   match "/" => redirect("/portfolio")
 
+  # Admin area
+  namespace :admin do 
+    resources :pages
+  end
+
+  get '/admin' => "admin#index"
+  get '/login' => "admin#login"
+
   resources :pages
 
   get '/:id' => 'pages#show'

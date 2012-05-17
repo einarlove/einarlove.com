@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
 
+  before_filter :authorize, except: :index
+
 	def show
 		@title = page.title
 		@description = page.description
