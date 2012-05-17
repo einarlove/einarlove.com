@@ -1,0 +1,10 @@
+.notice 
+	= notice
+%form{action: "login", method: :post}
+	%label Username
+	%input{name: "username"}
+
+	%label password
+	%input{name: "password"}
+
+	%input{type: :submit}

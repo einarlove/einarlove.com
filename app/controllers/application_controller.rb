@@ -8,12 +8,12 @@ class ApplicationController < ActionController::Base
   def authorize
   	unless admin?
   		flash[:error] = "Restricted to admin"
-  		redirect_to admin_path
+  		redirect_to "/login"
   		false
   	end
   end
 
   def admin?
-  	false
+  	session[:username] == "admin" and session[:password] == "admin"
   end
 end

@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  before_filter :authorize, except: :index
+  before_filter :authorize, except: :show
 
 	def show
 		@title = page.title
