@@ -13,11 +13,12 @@ class PagesController < ApplicationController
 
   def new
   	page = Page.new
+  	@title = "Create new page"
   end
 
   def create
   	if page.save!
-  		redirect_to page_path(page)
+  		redirect_to page
   	else
   		render :action => :new
   	end
@@ -27,7 +28,8 @@ class PagesController < ApplicationController
   end
 
   def update
-  	redirect_to page_path(page)
+  	page.update_attributes(params[:page])
+  	redirect_to page
   end
 
   def destroy

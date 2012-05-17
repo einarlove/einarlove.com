@@ -1,6 +1,6 @@
 Einarlove::Application.routes.draw do
 
-  root :to => "pages#portfolio"
+  match "/" => redirect("/portfolio")
 
   resources :pages
 
