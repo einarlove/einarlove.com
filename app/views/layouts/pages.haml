@@ -1,0 +1,24 @@
+%title= @description
+%meta{charset: "utf-8"}
+= stylesheet_link_tag "main", :media => "all"
+-if admin?
+	= stylesheet_link_tag "admin", :media => "all"
+= csrf_meta_tags
+%header
+	%hgroup
+		%a{ href: "/", title:"Back to frontpage"}
+			%h1 Einar Löve
+			%h2 Interactiondesigner
+	%nav
+		= render "layouts/navigation"
+%section{class: page.layout}
+	= yield
+
+%footer
+	%div
+		%span Copyright 2012
+		%a{href:"/admin", title:"Einar Löve"} Einar Löve
+	%div
+		%span Contact me on twitter
+		%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
+			@einarlove

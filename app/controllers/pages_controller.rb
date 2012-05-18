@@ -9,10 +9,6 @@ class PagesController < ApplicationController
 		@notice = "!!!!!"
 	end
 
-  def index
-  	@pages = Page.all
-  end
-
   def new
   	page = Page.new
   	@title = "Create new page"
