@@ -11,19 +11,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120515170329) do
+ActiveRecord::Schema.define(:version => 20120519220242) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
     t.string   "title"
+    t.string   "description"
     t.text     "body"
-    t.string   "image"
     t.string   "layout"
+    t.boolean  "visible"
+    t.string   "image"
+    t.string   "slug"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "portfolio", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "involvement"
+    t.string   "links"
+    t.string   "image"
     t.boolean  "visible"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "slug"
-    t.string   "description"
   end
 
 end
