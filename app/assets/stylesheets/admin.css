@@ -37,6 +37,7 @@
 .admin_area li{
 	border-bottom: solid 1px #e0e0e0;
 	padding: 20px 0;
+	min-height: 63px;
 }
 
 

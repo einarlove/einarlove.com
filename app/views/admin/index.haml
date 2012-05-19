@@ -19,6 +19,8 @@
 				= link_to "Edit", edit_page_path(page)
 				= link_to "Delete", "/pages/#{page.name}/delete"
 				%p= truncate(page.body, length: 40)
+				- unless page.body
+					%p= page.description
 .one_column
 	%ul
 		- 1.upto(6) do |number|
