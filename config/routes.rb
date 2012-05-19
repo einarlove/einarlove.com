@@ -11,5 +11,5 @@ Einarlove::Application.routes.draw do
   resources :pages
 
   get '/:id' => 'pages#show'
-
+  get '/pages/:id/delete' => "pages#destroy"
 end

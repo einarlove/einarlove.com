@@ -77,7 +77,7 @@ section{
 	width: 595px;
 	float:left;
 }
-.two_columns + .one_column, .one_column + .two_columns{
+.two_columns + .one_column, .one_column + .two_columns, .one_column + .one_column{
 	margin-left:15px;
 }
 section > h1,article > h1{

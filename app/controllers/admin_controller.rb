@@ -1,7 +1,9 @@
 class AdminController < ApplicationController
 
 	before_filter :authorize, except: :login
+
 	layout "admin"
+
   def index
   	@description = "Overview"
   	@pages = Page.all

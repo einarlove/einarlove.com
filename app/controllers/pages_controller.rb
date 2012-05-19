@@ -2,6 +2,10 @@ class PagesController < ApplicationController
 
   before_filter :authorize, except: :show
 
+  def index
+    @pages = Page.all
+  end
+
 	def show
 		@title = page.title
 		@description = page.description
@@ -31,7 +35,8 @@ class PagesController < ApplicationController
   end
 
   def destroy
-  	page.destroy
+    page = Page.find(params[:id])
+  	page.delete
   	redirect_to pages_path
   end
 
