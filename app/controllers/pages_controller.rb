@@ -7,10 +7,6 @@ class PagesController < ApplicationController
   end
 
 	def show
-		@title = page.title
-		@description = page.description
-		@name = page.name
-		@notice = "!!!!!"
 	end
 
   def new

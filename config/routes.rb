@@ -6,7 +6,7 @@ Einarlove::Application.routes.draw do
 
   get '/login' => "admin#login"
   post '/login' => "admin#login"
-  post '/logout' => "admin#logout"
+  get '/logout' => "admin#logout"
 
   resources :pages
 
