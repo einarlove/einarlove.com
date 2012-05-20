@@ -16,3 +16,6 @@
 
 #Ignore /Doc directory
 /doc
+
+#Ignore test directory
+/test
