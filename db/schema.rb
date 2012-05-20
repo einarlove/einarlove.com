@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120519220242) do
+ActiveRecord::Schema.define(:version => 20120520211256) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20120519220242) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "portfolio", :force => true do |t|
+  create_table "portfolio_items", :force => true do |t|
     t.string   "title"
     t.text     "body"
     t.string   "involvement"

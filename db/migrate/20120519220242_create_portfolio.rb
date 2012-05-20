@@ -8,6 +8,7 @@ class CreatePortfolio < ActiveRecord::Migration
       t.string :image
       t.boolean :visible
       t.string :slug
+
       t.timestamps
     end
   end
