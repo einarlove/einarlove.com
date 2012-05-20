@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20120519220242) do
     t.string   "links"
     t.string   "image"
     t.boolean  "visible"
+    t.string   "slug"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
