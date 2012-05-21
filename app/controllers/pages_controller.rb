@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   end
 
   def create
-  	if page.save!
+  	if page.save
   		redirect_to page
   	else
   		render :action => :new

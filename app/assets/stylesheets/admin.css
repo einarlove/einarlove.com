@@ -87,6 +87,7 @@ input[type="submit"]:hover{
 	color: brown;
 }
 /*label[for="page_visible"], label[for="page_layout"]{
+	clear:left;
 	float:left;
 }
 input[type="checkbox"]{
@@ -94,8 +95,8 @@ input[type="checkbox"]{
 	clear:right;
 }
 input[type="checkbox"]:after{
-	content:'\A';
-}*/
+	co*/ntent:'\A';
+}
 /* ---------- */
 /*   Edit     */
 /* ---------- */

@@ -1,0 +1,6 @@
+%article.two_columns
+	%h1= page.title
+	.one_column
+		= render "contact_form"
+	.one_column
+		!= simple_format(page.body)

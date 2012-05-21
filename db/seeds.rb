@@ -51,5 +51,24 @@ portfolioItems = PortfolioItem.create([
 		involvement: ["Frontend", "Image gallery"],
 		links: ["http://www.sdyrkorn.no"],
 		visible: true
+	},
+	{
+		title: "Iyengar yoga",
+		body: "As a school project we were confronted by the local Iyengar yoga practicians which wanted a new homepage for not only one center, but nationaly.
+
+Alot of energy was put in to manage all the the information that would be stored on the site, and not create a cliché yoga theme.",
+		image: "iyengar-yoga.jpg",
+		involvement: ["Frontend", "Information architecture"],
+		links: ["iyengaryoga/"],
+		visible: true
+	},
+	{
+		title: "2012 Calendar",
+		body: "I recently had the need to have a full year calendar for print which did not look corporate and excel'ish, so I made my own.
+
+I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL + P</code> if your on windows.",
+		image: "2012-calendar.jpg",
+		links: ["2012calendar.html"],
+		visible: true
 	}
 ])
