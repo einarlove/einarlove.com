@@ -1,5 +1,5 @@
 %article.one_column
 	%h1= page.title
-	!= page.body
+	!= simple_format(page.body)
 - if page.image
 	%img.two_columns{src: image_path("me.jpg")}

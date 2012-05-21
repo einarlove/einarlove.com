@@ -1,7 +1,9 @@
 %ul
 	-if admin?
+		- if params[:controller] == "admin"
+			- admin_current = "current_page"
 		%li
-			%a{href:"/admin", title:"Admin area"} Admin	
+			%a{href:"/admin", title:"Admin area", class: admin_current} Admin	
 	- Page.where("visible = ?", true).order("created_at DESC").each do |page|
 		- if params[:id] == page.name or params[:controller] == page.name
 			- current_page = "current_page"

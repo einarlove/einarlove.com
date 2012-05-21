@@ -25,6 +25,7 @@ I am also reachable on twitter as <a href='http://twitter.com/einarlove'>@einarl
 	<p>
 		The power to create your own custom worlds on the internet which benefited from imagination and empathy really attracted me. So after gymnas I attended Interaction design at the Norwegian school of creativity in Oslo where I reside and study at this date.</p>",
 	layout: "static",
+	image: "me.jpg"
 	visible: true},
 
 
@@ -38,4 +39,16 @@ I am also reachable on twitter as <a href='http://twitter.com/einarlove'>@einarl
 	description: "My portfolio",
 	layout: "portfolio",
 	visible: true}
-	])
+])
+portfolioItems = PortfolioItem.create([
+	{
+		title: "Synøve Dyrkorn",
+		body: "<p>
+		The Norwegian artist Synøve Dyrkorn was in need for a website for her artworks.</p>
+		<p>I was contacted by the chosen designer which needed me to take the work for the frontend code, markup and construct a gallery view.</p>",
+		image: "synovedyrkorn.jpg",
+		involvement: ["Frontend", "Image gallery"],
+		links: ["http://www.sdyrkorn.no"],
+		visible: true
+	}
+])

@@ -5,8 +5,8 @@
 		= link_to "View all", pages_path
 	.one_column
 		%h1 Portfolio
-		= link_to "New"
-		= link_to "View all"
+		= link_to "New", new_portfolio
+		= link_to "View all", portfolio
 	.one_column
 		%h1 Articles
 		= link_to "New"
@@ -23,12 +23,12 @@
 					%p= page.description
 .one_column
 	%ul
-		- 1.upto(6) do |number|
+		- @portfolio.each do |item|
 			%li
-				%h2= "Untitled item #{number}"
-				= link_to "Edit"
-				= link_to "Delete"
-				%p= truncate("Placeholder portfolio item", length: 40)
+				%h2= item.title
+				= link_to "Edit", edit_portfolio_path(item)
+				= link_to "Delete", "/portfolio/#{item.slug}/delete"
+				%p= truncate(item.body, length: 40)
 .one_column
 	%ul
 		- 1.upto(3) do |number|

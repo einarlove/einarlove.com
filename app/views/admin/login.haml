@@ -1,11 +1,11 @@
-.notice 
-	= notice
-%h1 Login
-%form{action: "login", method: :post}
-	%label Username
-	%input{name: "username"}
+.login.one_column
+	%h1 Login
+	.notice 
+		= notice
+	%form{action: "login", method: :post}
+		%label Username
+		%input{name: "username", type: "text"}
 
-	%label password
-	%input{name: "password"}
-
-	%input{type: :submit}
+		%label Password
+		%input{name: "password", type: "password"}
+		%input{type: :submit, value: "Login"}

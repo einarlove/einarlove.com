@@ -12,7 +12,7 @@
 	display:inline;
 	padding-right: 6px;
 }
-.admin_area hgroup a{
+.admin_area hgroup a, input[type="submit"]{
 	font-family: "Pill Gothic 300mg", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -40,4 +40,49 @@
 	min-height: 63px;
 }
 
+/* ---------- */
+/*   Login    */
+/* ---------- */
 
+.login{
+	margin-left: 305px;
+	margin-top: 150px;
+}
+.login h1{
+	display:block;
+	padding:0 0 13px;
+	border-bottom: solid 1px #e0e0e0;
+	margin-bottom: 13px;
+}
+label {
+	font-style: italic;
+	color: #6c6c6c;
+	margin:10px 0 3px 0
+}
+label:after{
+	content: ':';
+}
+input[type="text"], input[type="password"]{
+	width:100%;
+	border: solid 1px #e0e0e0;
+	padding: 6px;
+	font-weight: bold;
+}
+input[type="submit"]{
+	margin-top:20px;
+	border:0;
+	background: #e0e0e0;
+	font-size:14px;
+	padding: 8px 10;
+	letter-spacing: 0.08em;
+}
+input[type="submit"]:hover{
+	background:#585858;
+	color: #e0e0e0;
+	cursor: pointer;
+}
+.notice{
+	margin-top:15px;
+	text-align:center;
+	color: brown;
+}
