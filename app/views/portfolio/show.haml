@@ -1,6 +1,6 @@
 %article.one_column
 	%h1= item.title
-	!= item.body
+	!= simple_format(item.body)
 	- if item.involvement
 		%h2 Work
 		- item.involvement.each do |w|
