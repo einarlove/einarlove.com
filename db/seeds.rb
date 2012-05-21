@@ -18,12 +18,9 @@ I am also reachable on twitter as <a href='http://twitter.com/einarlove'>@einarl
 	{name: "about",
 	title: "A short introduction",
 	description: "About me",
-	body: "<p>
-		My name is Einar Ágúst Löve, born in Iceland, raised in Norway but lived on the internet once it got its grip on me.</p>
-	<p>
-		Studied media and communication in gymnas where I experienced film production, animation, graphic design, web design and illustration.</p>
-	<p>
-		The power to create your own custom worlds on the internet which benefited from imagination and empathy really attracted me. So after gymnas I attended Interaction design at the Norwegian school of creativity in Oslo where I reside and study at this date.</p>",
+	body: "My name is Einar Ágúst Löve, born in Iceland, raised in Norway but lived on the internet once it got its grip on me.
+		Studied media and communication in gymnas where I experienced film production, animation, graphic design, web design and illustration.
+		The power to create your own custom worlds on the internet which benefited from imagination and empathy really attracted me. So after gymnas I attended Interaction design at the Norwegian school of creativity in Oslo where I reside and study at this date.",
 	layout: "static",
 	image: "me.jpg",
 	visible: true},
