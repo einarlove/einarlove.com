@@ -1,23 +1,30 @@
-%h1= @title
+= render "admin/header"
+
 
 = form_for page do |f|
+	.one_column
+		= f.label :name 
+		= f.text_field :name 
 
-	= f.label :name 
-	= f.text_field :name 
+		= f.label :title 
+		= f.text_field :title 
 
-	= f.label :title 
-	= f.text_field :title 
+		= f.label :description, "Short description" 
+		= f.text_field :description 
 
-	= f.label :layout 
-	= f.text_field :layout 
+		= f.label :visible, "Visible in menu"
+		= f.check_box :visible
 
-	= f.label :description 
-	= f.text_field :description 
+		= f.label :layout, "Page layout"
+		= f.select(:layout, ["portfolio", "static", "blog", "contact"])
 
-	= f.label :image 
-	= f.file_field :image 
+	.one_column
+		= f.label :body
+		= f.text_area :body
 
-	= f.label :body
-	= f.text_area :body
+	.one_column
+		= f.label :image 
+		= f.file_field :image 
 
-	= f.submit
+
+		= f.submit

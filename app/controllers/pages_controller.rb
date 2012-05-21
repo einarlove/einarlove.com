@@ -11,7 +11,7 @@ class PagesController < ApplicationController
 
   def new
   	page = Page.new
-  	@title = "Create new page"
+    render layout: "admin"
   end
 
   def create
@@ -23,6 +23,7 @@ class PagesController < ApplicationController
   end
 
   def edit
+    render layout: "admin"
   end
 
   def update

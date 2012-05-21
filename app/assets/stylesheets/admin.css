@@ -73,7 +73,7 @@ input[type="submit"]{
 	border:0;
 	background: #e0e0e0;
 	font-size:14px;
-	padding: 8px 10;
+	padding: 10px 10px 8px;
 	letter-spacing: 0.08em;
 }
 input[type="submit"]:hover{
@@ -85,4 +85,27 @@ input[type="submit"]:hover{
 	margin-top:15px;
 	text-align:center;
 	color: brown;
+}
+/*label[for="page_visible"], label[for="page_layout"]{
+	float:left;
+}
+input[type="checkbox"]{
+	float:left;
+	clear:right;
+}
+input[type="checkbox"]:after{
+	content:'\A';
+}*/
+/* ---------- */
+/*   Edit     */
+/* ---------- */
+
+.dimmed{
+	color: gray;
+}
+textarea{
+		border: solid 1px #e0e0e0;
+		font-size: 14px;
+		width: 290px;
+		padding: 15px;
 }
