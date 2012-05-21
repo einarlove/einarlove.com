@@ -12,8 +12,6 @@ group :development do
     gem 'sqlite3'
 end
 
-gem "carrierwave"
-
 # Added for templating html
 gem 'haml', '3.1.4'
 
