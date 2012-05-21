@@ -1,5 +1,5 @@
 - def isNot(controller)
-	-	unless params[:controller] == controller
+	-	unless params[:controller] == controller or params[:controller] == "admin"
 		-return "dimmed"
 %hgroup
 	.one_column{class: isNot("pages")}
