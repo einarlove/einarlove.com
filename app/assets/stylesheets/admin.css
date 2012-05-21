@@ -12,7 +12,7 @@
 	display:inline;
 	padding-right: 6px;
 }
-.admin_area hgroup a, input[type="submit"]{
+.admin_area hgroup > a, input[type="submit"]{
 	font-family: "Pill Gothic 300mg", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -27,7 +27,7 @@
 	font-size: 18px;
 	text-transform: capitalize;
 }
-.admin_area li a{
+.admin_area li > a{
 	font-style: italic;
 	color: #585858;
 }
@@ -101,7 +101,12 @@ input[type="checkbox"]:after{
 /* ---------- */
 
 .dimmed{
-	color: gray;
+	opacity: 0.2;
+	-webkit-transition: opacity .1s;
+}
+.dimmed:hover{
+
+	opacity:1;
 }
 textarea{
 		border: solid 1px #e0e0e0;

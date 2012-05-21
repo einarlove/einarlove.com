@@ -1,13 +1,16 @@
+- def isNot(controller)
+	-	unless params[:controller] == controller
+		-return "dimmed"
 %hgroup
-	.one_column
-		%h1 Pages
+	.one_column{class: isNot("pages")}
+		%h1= link_to "Pages", pages_path
 		= link_to "New", new_page_path
 		= link_to "View all", pages_path
-	.one_column
+	.one_column{class: isNot("portfolio")}
 		%h1 Portfolio
-		= link_to "New", "/portfolio/new"
+		= link_to "New", new_portfolio_path
 		= link_to "View all" , "/portfolio"
-	.one_column
+	.one_column{class: isNot("blog")}
 		%h1 Articles
 		= link_to "New"
 		= link_to "View all"
