@@ -25,7 +25,7 @@ I am also reachable on twitter as <a href='http://twitter.com/einarlove'>@einarl
 	<p>
 		The power to create your own custom worlds on the internet which benefited from imagination and empathy really attracted me. So after gymnas I attended Interaction design at the Norwegian school of creativity in Oslo where I reside and study at this date.</p>",
 	layout: "static",
-	image: "me.jpg"
+	image: "me.jpg",
 	visible: true},
 
 
