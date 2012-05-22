@@ -8,4 +8,4 @@
 		- if params[:id] == page.name and params[:action] == "show"
 			- current_page = "current_page"
 		%li
-			%a{href:"/"+page.name, title:page.description, class: current_page}= page.name
+			%a{href:"/"+page.slug, title:page.description, class: current_page}= page.name

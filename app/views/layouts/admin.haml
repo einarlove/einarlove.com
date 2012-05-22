@@ -2,8 +2,6 @@
 %meta{charset: "utf-8"}
 = stylesheet_link_tag "reset", :media => "all"
 = stylesheet_link_tag "main", :media => "all"
--if admin? or page_path("login")
-	= stylesheet_link_tag "admin", :media => "all"
 = csrf_meta_tags
 - unless request.path == "/login"
 	%header
