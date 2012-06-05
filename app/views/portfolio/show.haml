@@ -10,8 +10,9 @@
 		%h2 Links
 		- item.links.each do |l|
 			- shown_link = l.sub(/^https?\:\/\//, '').sub(/^www./,'')
+			- link = l.include?("www") ? l : "/view/"+l
 			%li
-				%a{href: "/view/"+l, target: "_blank"}= shown_link
+				%a{href: link, target: "_blank"}= shown_link
 - if item.image
 	%img.two_columns{src: image_path(item.slug+".jpg")}
 
