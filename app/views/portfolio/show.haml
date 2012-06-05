@@ -11,7 +11,7 @@
 		- item.links.each do |l|
 			- shown_link = l.sub(/^https?\:\/\//, '').sub(/^www./,'')
 			%li
-				%a{href: l}= shown_link
+				%a{href: "/view/"+l, target: "_blank"}= shown_link
 - if item.image
 	%img.two_columns{src: image_path(item.slug+".jpg")}
 
