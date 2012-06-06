@@ -2,7 +2,7 @@ Einarlove::Application.routes.draw do
 
 
 	# Root
-  match "/" => redirect("/portfolio")
+  # match "/" => redirect("/portfolio")
 
   #Admin
   get '/admin' => "admin#index"
