@@ -20,3 +20,5 @@
 		%span Contact me on twitter
 		%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
 			@einarlove
+
+= render "layouts/analystics" if Rails.env == 'production'
