@@ -18,6 +18,26 @@ module Einarlove
     # add app/assets/fonts to the asset path
     config.assets.paths << Rails.root.join("app", "assets", "fonts")
 
+
+
+    # Configuration for mail support
+    # git update-index --no-assume-unchanged config/application.rb
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "einarlove.com",
+      :user_name            => "gmail@einarlove.com",
+      :password             => "••••••",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "einarlove.com"
+    }
+
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
