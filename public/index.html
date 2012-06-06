@@ -21,6 +21,8 @@ h1{
 	overflow: hidden;
 	white-space: nowrap;
 	-webkit-animation: fadeIn 3s ease;
+	-moz-animation: fadeIn 3s ease;
+	animation: fadeIn 3s ease;
 }
 a{
 	color:inherit;
@@ -28,6 +30,22 @@ a{
 	cursor:inherit;
 }
 @-webkit-keyframes fadeIn{
+	0%,50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-moz-keyframes fadeIn{
+	0%,50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes fadeIn{
 	0%,50%{
 		opacity: 0;
 	}
