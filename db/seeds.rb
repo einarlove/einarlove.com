@@ -3,7 +3,7 @@ pages = Page.create([
 	{name: "blog",
 	description: "My blog entries and articles",
 	layout: "blog",
-	visible: true},
+	visible: false},
 
 
 	{name: "contact",
@@ -36,6 +36,7 @@ The power to create your own custom worlds on the internet which benefited from 
 
 
 	{name: "portfolio",
+	title: "Einar Löve's portfolio"
 	description: "My portfolio",
 	layout: "portfolio",
 	visible: true}
