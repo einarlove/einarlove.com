@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.all
+    page.title = "Einar Löve - Interaction designer"
   end
 
 	def show
