@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120520211256) do
+ActiveRecord::Schema.define(:version => 20120622025748) do
 
   create_table "pages", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20120520211256) do
     t.string   "slug"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "video"
   end
 
 end
