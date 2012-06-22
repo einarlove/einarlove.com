@@ -13,7 +13,16 @@
 			- link = l.include?("www") ? l : "/view/"+l
 			%li
 				%a{href: link, target: "_blank"}= shown_link
-- if item.image
+- if item.video
+	.video_container.two_columns
+		%video{poster: "/portfolio/images/"+item.slug+".jpg"}
+			%source{src: "/portfolio/videos/"+item.slug+".mp4", type: 'video/mp4; codecs: "avc1.42E01E, mp4a.40.2"', autobuffer: true}
+			%source{src: "/portfolio/videos/"+item.slug+".webm", type: 'video/webm; codecs="vp8, vorbis"', autobuffer: true}
+			= javascript_include_tag "video_controller"
+		.video_controller
+			.play
+
+- elsif item.image
 	%img.two_columns{src: image_path(item.slug+".jpg")}
 
 = render "pages/portfolio"
