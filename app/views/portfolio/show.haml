@@ -23,6 +23,9 @@
 			%source{src: "/portfolio/videos/"+item.slug+".mp4", type: 'video/mp4; codecs: "avc1.42E01E, mp4a.40.2"', autobuffer: true}
 			%source{src: "/portfolio/videos/"+item.slug+".webm", type: 'video/webm; codecs="vp8, vorbis"', autobuffer: true}
 			= javascript_include_tag "video_controller"
+			%p
+				Your browser does not have video support. Upgrade your browser 
+				%a{href:"http://www.updateyourbrowser.net/en/", target:"_blank"} here.
 		.video_controller
 		.progress_bar
 			.time_bar
