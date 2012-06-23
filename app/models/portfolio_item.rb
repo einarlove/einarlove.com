@@ -1,5 +1,5 @@
 class PortfolioItem < ActiveRecord::Base
-  attr_accessible :body, :image, :involvement, :links, :title, :visible, :slug
+  attr_accessible :body, :image, :involvement, :links, :title, :visible, :video, :slug
   serialize :involvement
   serialize :links
 

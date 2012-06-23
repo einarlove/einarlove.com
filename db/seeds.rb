@@ -36,21 +36,40 @@ The power to create your own custom worlds on the internet which benefited from 
 
 
 	{name: "portfolio",
-	title: "Einar Löve's portfolio"
+	title: "Einar Löve's portfolio",
 	description: "My portfolio",
 	layout: "portfolio",
 	visible: true}
 ])
 portfolioItems = PortfolioItem.create([
 	{
+		title: "Teacher management tool",
+		body: "In a brief school assignment we were to come up with a proposal for a new homepage for Kjær Gartneri, a cherry tomato farm in Norway.
+
+My group conducted usability evaluation with test users, analysis, design and a showcase video for the interaction.",
+		image: "desk.jpg",
+		involvement: ["Concept", "Showcase video"],
+		links: [["Our concept","desk/index.html"], ["Competition in Limoges", "http://webdesign-festival.com/2012/en/"]],
+		video: true,
+		visible: true
+	},
+	{
+		title: "cherrytomat.no",
+		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France. This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
+		image: "cherrytomat.jpg",
+		involvement: ["Concept", "Design", "Showcase video"],
+		video: true,
+		visible: true
+	},
+	{
 		title: "Synøve Dyrkorn",
 		body: "
 		The Norwegian artist Synøve Dyrkorn was in need for a website for her artworks.
 
-		I was contacted by the chosen designer which needed me to take the work for the frontend code, markup and construct a gallery view.",
+I was contacted by the chosen designer which needed me to take the work for the frontend code, markup and construct a gallery view.",
 		image: "synovedyrkorn.jpg",
 		involvement: ["Frontend", "Image gallery"],
-		links: ["http://www.sdyrkorn.no"],
+		links: [["Synøve's homepage", "http://www.sdyrkorn.no"]],
 		visible: true
 	},
 	{
@@ -60,7 +79,7 @@ portfolioItems = PortfolioItem.create([
 Alot of energy was put in to manage all the the information that would be stored on the site, and not create a cliché yoga theme.",
 		image: "iyengar-yoga.jpg",
 		involvement: ["Frontend", "Information architecture"],
-		links: ["iyengaryoga/"],
+		links: [["Iyengar yoga", "iyengaryoga/"]],
 		visible: true
 	},
 	{
@@ -69,7 +88,7 @@ Alot of energy was put in to manage all the the information that would be stored
 
 I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL + P</code> if your on windows.",
 		image: "2012-calendar.jpg",
-		links: ["2012calendar.html"],
+		links: [["2012 Calendar", "2012calendar.html"]],
 		visible: true
 	}
 ])

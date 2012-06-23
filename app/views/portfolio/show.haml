@@ -9,8 +9,12 @@
 	- if item.links
 		%h2 Links
 		- item.links.each do |l|
-			- shown_link = l.sub(/^https?\:\/\//, '').sub(/^www./,'')
-			- link = l.include?("www") ? l : "/view/"+l
+			- shown_link = l[0]
+			- link = l[1]
+			- if link.include? "http"
+				-	link = "http://"+ link 
+			-	else
+				-	link = "/view/" + link
 			%li
 				%a{href: link, target: "_blank"}= shown_link
 - if item.video
