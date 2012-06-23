@@ -290,10 +290,14 @@ input[type="checkbox"]:after{
        -o-transition:width 1s ease-out;
           transition:width 1s ease-out;
 }
-.playing .video_controller, .playing .portfolio_items{
+
+.playing .portfolio_items{
+	visibility:hidden;
+}
+.playing .video_controller, .time_bar{
 	opacity:0;
 }
-.playing video{
+.playing video, .playing .video_container:hover .time_bar{
 	opacity:1;
 }
 .video_controller:after{
@@ -305,7 +309,25 @@ input[type="checkbox"]:after{
 	left:40px;
 	background: url('<%= image_path("video_controller.png") %>');
 }
-
+.video_container .progress_bar{
+	background: white;
+	height: 10px;
+	width:100%;
+}
+.video_container .time_bar{
+	background:#999;
+	height: 1px;
+	width:0%;
+	-webkit-transition: 1s;
+     -moz-transition: 1s;
+      -ms-transition: 1s;
+       -o-transition: 1s;
+          transition: 1s;
+}
+.video_container .progress_bar:hover .time_bar{
+	height:50%;
+	background:black;
+}
 
 /* ---------- */
 /*   admin    */

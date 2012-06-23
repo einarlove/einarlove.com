@@ -20,7 +20,8 @@
 			%source{src: "/portfolio/videos/"+item.slug+".webm", type: 'video/webm; codecs="vp8, vorbis"', autobuffer: true}
 			= javascript_include_tag "video_controller"
 		.video_controller
-			.play
+		.progress_bar
+			.time_bar
 
 - elsif item.image
 	%img.two_columns{src: image_path(item.slug+".jpg")}
