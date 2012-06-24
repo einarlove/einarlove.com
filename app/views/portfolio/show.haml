@@ -8,15 +8,9 @@
 
 	- if item.links
 		%h2 Links
-		- item.links.each do |l|
-			- shown_link = l[0]
-			- link = l[1]
-			- if link.include? "http"
-				-	link = "http://"+ link 
-			-	else
-				-	link = "/view/" + link
+		- item.links.each do |link|
 			%li
-				%a{href: link, target: "_blank"}= shown_link
+				%a{href: link[1], target: "_blank"}= link[0]
 - if item.video
 	.video_container.two_columns
 		%video{poster: "/portfolio/images/"+item.slug+".jpg"}

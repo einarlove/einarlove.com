@@ -49,13 +49,15 @@ portfolioItems = PortfolioItem.create([
 My group conducted usability evaluation with test users, analysis, design and a showcase video for the interaction.",
 		image: "desk.jpg",
 		involvement: ["Concept", "Showcase video"],
-		links: [["Our concept","desk/index.html"], ["Competition in Limoges", "http://webdesign-festival.com/2012/en/"]],
+		links: [["Our concept","/view/desk/index.html"], ["Competition in Limoges", "http://webdesign-festival.com/2012/en/"]],
 		video: true,
 		visible: true
 	},
 	{
 		title: "cherrytomat.no",
-		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France. This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
+		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France.
+
+		This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
 		image: "cherrytomat.jpg",
 		involvement: ["Concept", "Design", "Showcase video"],
 		video: true,
@@ -79,7 +81,7 @@ I was contacted by the chosen designer which needed me to take the work for the 
 Alot of energy was put in to manage all the the information that would be stored on the site, and not create a cliché yoga theme.",
 		image: "iyengar-yoga.jpg",
 		involvement: ["Frontend", "Information architecture"],
-		links: [["Iyengar yoga", "iyengaryoga/"]],
+		links: [["Iyengar yoga", "/view/iyengaryoga/"]],
 		visible: true
 	},
 	{
@@ -88,7 +90,7 @@ Alot of energy was put in to manage all the the information that would be stored
 
 I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL + P</code> if your on windows.",
 		image: "2012-calendar.jpg",
-		links: [["2012 Calendar", "2012calendar.html"]],
+		links: [["2012 Calendar", "/view/2012calendar.html"]],
 		visible: true
 	}
 ])
