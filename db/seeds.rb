@@ -46,7 +46,7 @@ portfolioItems = PortfolioItem.create([
 		title: "Teacher management tool",
 		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France.
 
-		This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
+		This is the video i created for our concept which shows the interaction for the interface for mobile devices.",
 		image: "desk.jpg",
 		involvement: ["Concept", "Showcase video"],
 		links: [["Our concept","/view/desk/index.html"], ["Competition in Limoges", "http://webdesign-festival.com/2012/en/"]],
