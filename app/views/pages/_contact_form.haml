@@ -1,11 +1,12 @@
-%form
+= form_for "@message", url: "/contact" do |form|
 	%label{for: "name"} Name
-	%input{type: "text"}
+	= form.text_field :name
 	%label{for: "email"} Email
-	%input{type: "text"}
+	= form.text_field :email
 	%label{for: "message"} Message
 	%textarea
-	%input{type: "submit", value: "Send message"}
 	.pardon
 		Contact form is not functional at this moment. Contact me at
 		%a{href:"mailto:einar.love@gmail.com?subject=message from einarlove.com"} einar.love@gmail.com
+	= form.text_area :message
+	%input{type: "submit", value: "Send message"}

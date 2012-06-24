@@ -18,7 +18,8 @@ Einarlove::Application.routes.draw do
 	#Portfolio
  	resources :portfolio
 
-
-  
+  #Contact form
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
   
 end
