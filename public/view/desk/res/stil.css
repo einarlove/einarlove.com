@@ -1,0 +1,45 @@
+body {
+	background-color: white;
+	font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	color: gray;
+	margin: 50px auto 0;
+	width: 720px;
+}
+
+h1, h2, h3 {
+	font-weight: 100;
+	color: #1c5388;
+
+}
+
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #1c5388;
+	
+}
+
+nav * {
+	color: white !important;
+	text-decoration: none !important;
+	padding: 5px 5px;
+	display: inline-block;
+}
+
+nav *:hover {
+	background: #c3e2ff;
+	color: #1c5388;
+}
+
+img {
+	width: 720px;
+	height: auto;
+}
+
+p {
+	margin-bottom: 20px;
+}
