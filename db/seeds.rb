@@ -44,9 +44,9 @@ The power to create your own custom worlds on the internet which benefited from 
 portfolioItems = PortfolioItem.create([
 	{
 		title: "Teacher management tool",
-		body: "In a brief school assignment we were to come up with a proposal for a new homepage for Kjær Gartneri, a cherry tomato farm in Norway.
+		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France.
 
-My group conducted usability evaluation with test users, analysis, design and a showcase video for the interaction.",
+		This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
 		image: "desk.jpg",
 		involvement: ["Concept", "Showcase video"],
 		links: [["Our concept","/view/desk/index.html"], ["Competition in Limoges", "http://webdesign-festival.com/2012/en/"]],
@@ -55,9 +55,9 @@ My group conducted usability evaluation with test users, analysis, design and a 
 	},
 	{
 		title: "cherrytomat.no",
-		body: "With 3 other friends, we came to the final of WIF International web design challenge, which was held in Limoges, France.
+		body: "In a brief school assignment we were to come up with a proposal for a new homepage for Kjær Gartneri, a cherry tomato farm in Norway.
 
-		This is the video i created for our concept which shows the interaction for the mobile interface for mobile devices.",
+My group conducted usability evaluation with test users, analysis, design and a showcase video for the interaction.",
 		image: "cherrytomat.jpg",
 		involvement: ["Concept", "Design", "Showcase video"],
 		video: true,
