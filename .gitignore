@@ -20,5 +20,5 @@
 #Ignore test directory
 /test
 
-#ignore the desgin PDS file
-/*.pds
+#ignore the design PSD file
+/*.psd
