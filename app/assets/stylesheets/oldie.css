@@ -1,0 +1,9 @@
+.video_controller{
+	display:none;
+}
+.portfolio_items{
+	width:915px !important;
+}
+.portfolio_item, .portfolio{
+	overflow-x:hidden;
+}

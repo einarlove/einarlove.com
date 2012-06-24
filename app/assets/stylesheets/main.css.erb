@@ -23,7 +23,7 @@
 }
 
 body{
-	font: 14px/1.5em "Trebuchet MS", Futura sans-serif normal;
+	font: 14px/1.5em "Trebuchet MS", Futura, "Lucida Sans", Tahoma, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -197,8 +197,8 @@ td{
 	background: white;
 	top:0px;
 	left:0px;
-	height:70%;
-	width:80%;
+	bottom:0px;
+	right:0px;
 	padding:30% 10% 0;
 	opacity: 0;
 	-webkit-transition:opacity .8s;
@@ -221,6 +221,11 @@ label {
 }
 label:after{
 	content: ':';
+}
+input, textarea{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 input[type="text"], input[type="password"]{
 	width:100%;

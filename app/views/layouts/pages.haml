@@ -1,26 +1,31 @@
-%title= page.title || page.name
-%meta{charset: "utf-8"}
-%meta{name: "description", content: "Interaction designer Einar Löve's portfolio."}
-%meta{name: "keywords", content: "Interaction designer, Einar Löve, Einar Ágúst Löve, Einar Løve, Einar August Loeve, einsikaldi, tittleabbo, Portfolio, design, icelandic, norway, NKF, Oslo, freelance web designer, user experience"}
-= stylesheet_link_tag "reset", :media => "all"
-= stylesheet_link_tag "main", :media => "all"
-%header
-	%hgroup
-		%a{ href: "/", title:"Back to frontpage"}
-			%h1 Einar Löve
-			%h2 Interactiondesigner
-	%nav
-		= render "layouts/navigation"
-%section{class: page.layout}
-	= yield
+%head
+	%title= page.title || page.name
+	%meta{charset: "utf-8"}
+	%meta{name: "description", content: "Interaction designer Einar Löve's portfolio."}
+	%meta{name: "keywords", content: "Interaction designer, Einar Löve, Einar Ágúst Löve, Einar Løve, Einar August Loeve, einsikaldi, tittleabbo, Portfolio, design, icelandic, norway, NKF, Oslo, freelance web designer, user experience"}
+	= stylesheet_link_tag "reset", :media => "all"
+	= stylesheet_link_tag "main", :media => "all"
+	/[if lt IE 9]
+		= stylesheet_link_tag "oldie", :media => "all"
+		%script{src:"/assets/html5shiv.js", type: "text/javascript"}
+%body
+	%header
+		%hgroup
+			%a{ href: "/", title:"Back to frontpage"}
+				%h1 Einar Löve
+				%h2 Interactiondesigner
+		%nav
+			= render "layouts/navigation"
+	%section{class: page.layout}
+		= yield
 
-%footer
-	%div
-		%span Copyright 2012
-		%a{href:"/admin", title:"Einar Löve"} Einar Löve
-	%div
-		%span Contact me on twitter
-		%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
-			@einarlove
+	%footer
+		%div
+			%span Copyright 2012
+			%a{href:"/admin", title:"Einar Löve"} Einar Löve
+		%div
+			%span Contact me on twitter
+			%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
+				@einarlove
 
-= render "layouts/analystics" if Rails.env == 'production'
+	= render "layouts/analystics" if Rails.env == 'production'
