@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", function() {
 				container = video.parentNode,
 				timeBar = container.querySelectorAll(".time_bar")[0];
 		container.addEventListener("click", function() {
-			document.body.classList.toggle("playing");
+			if(navigator.userAgent.indexOf("MSIE") > 1){
+				document.body.className = document.body.className=="playing" ? null : "playing";
+				console.log(document.body.className);
+			}
+			else
+				document.body.classList.toggle("playing");
 			if(video.paused)
 				video.play();
 			else 
