@@ -282,13 +282,14 @@ input[type="checkbox"]:after{
 	opacity:1;
 }
 .video_container:hover .video_controller{
-	background: black;
+	background-color: black;
 }
 .video_controller{
 	position:absolute;
 	top:50%;
 	left:50%;
 	background: #3f3f3f;
+	background-position:center;
 	width:100px;
 	height: 50px;
 	margin-left:-50px;
@@ -352,6 +353,21 @@ input[type="checkbox"]:after{
 	background:black;
 }
 
+.buffering .video_controller{
+	opacity:1;
+	background: url("<%= image_path('buffer.gif')%>") no-repeat center black;
+	margin-top: -20px;
+	margin-left: -30px;
+	height: 40px;
+	width: 60px;
+	-webkit-transition: 1s 1s;
+		 -moz-transition: 1s 1s;
+			-ms-transition: 1s 1s;
+			 -o-transition: 1s 1s;
+					transition: 1s 1s;
+
+}
+.buffering .video_controller:after{display:none;}
 /* ---------- */
 /*   admin    */
 /* ---------- */

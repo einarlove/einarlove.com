@@ -13,9 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
 				document.body.classList.toggle("playing");
 			if(video.paused)
 				video.play();
-			else 
+			else{
 				video.pause();
 				video.currentTime = 0;
+			}
+			if(video.buffered.length == 0 && document.body.className=="playing"){
+				setTimeout('document.body.classList.add("buffering")', 1000);
+			}
 		});
 		video.addEventListener("ended", function() {
 			document.body.classList.remove("playing");
@@ -24,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		video.addEventListener("timeupdate", function(){
 			timeBarPercent = 100 * video.currentTime / video.duration;
 			timeBar.style.width = timeBarPercent + "%";
+			document.body.classList.remove("buffering");
 		});
 	}
 });
