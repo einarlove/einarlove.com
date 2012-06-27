@@ -284,14 +284,11 @@ input[type="checkbox"]:after{
 .video_container:hover video{
 	opacity:1;
 }
-.video_container:hover .video_controller{
-	background-color: black;
-}
 .video_controller{
 	position:absolute;
 	top:50%;
 	left:50%;
-	background: #3f3f3f;
+	background: black;
 	background-position:center;
 	width:100px;
 	height: 50px;
@@ -299,6 +296,7 @@ input[type="checkbox"]:after{
 	margin-top:-25px;
 	border-radius: 5px;
 	opacity:1;
+	cursor:pointer;
 	-webkit-transition:opacity .2s;
 		 -moz-transition:opacity .2s;
 			-ms-transition:opacity .2s;
@@ -355,7 +353,6 @@ input[type="checkbox"]:after{
 	height:50%;
 	background:black;
 }
-
 .buffering .video_controller{
 	opacity:1;
 	background: url("<%= image_path('buffer.gif')%>") no-repeat center black;
@@ -363,11 +360,11 @@ input[type="checkbox"]:after{
 	margin-left: -30px;
 	height: 40px;
 	width: 60px;
-	-webkit-transition: 1s 1s;
-		 -moz-transition: 1s 1s;
-			-ms-transition: 1s 1s;
-			 -o-transition: 1s 1s;
-					transition: 1s 1s;
+	-webkit-transition: 1s;
+		 -moz-transition: 1s;
+			-ms-transition: 1s;
+			 -o-transition: 1s;
+					transition: 1s;
 
 }
 .buffering .video_controller:after{display:none;}
