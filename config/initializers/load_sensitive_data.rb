@@ -1,9 +1,9 @@
 SENSITIVE = Hash.new
 if Rails.env == "production"
-	# Stores as constants globaly on Heroku
-	SENSITIVE["username"] = ADMIN_USERNAME
-	SENSITIVE["password"] = ADMIN_PASSWORD
-	SENSITIVE["mail_password"] = GMAIL_PASSWORD
+	# Stored in enviroment variable on Heroku
+	SENSITIVE["username"] = ENV['ADMIN_USERNAME']
+	SENSITIVE["password"] = ENV['ADMIN_PASSWORD']
+	SENSITIVE["mail_password"] = ENV['GMAIL_PASSWORD']
 else
 	SENSITIVE["username"] = "admin"
 	SENSITIVE["password"] = "admin"

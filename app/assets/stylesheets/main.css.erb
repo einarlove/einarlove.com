@@ -210,8 +210,14 @@ td{
 			 -o-transition:opacity .8s;
 					transition:opacity .8s;
 }
+.contact form .error{
+	color:darkred;
+}
 .contact form:hover .pardon{
 	opacity:1;
+}
+.contact textarea:focus{
+	height: 8em;
 }
 /* ---------- */
 /*   Login    */
@@ -248,6 +254,10 @@ input[type="submit"]:hover{
 	background:#585858;
 	color: #e0e0e0;
 	cursor: pointer;
+}
+input:focus, textarea:focus{
+	outline:0;
+	border-color:	#aaa;
 }
 .notice{
 	margin-top:15px;
@@ -368,6 +378,8 @@ input[type="checkbox"]:after{
 
 }
 .buffering .video_controller:after{display:none;}
+
+
 /* ---------- */
 /*   admin    */
 /* ---------- */
@@ -414,10 +426,6 @@ input[type="checkbox"]:after{
 	padding: 20px 0;
 	min-height: 63px;
 }
-.dimmed{
-	opacity: 0.2;
-	-webkit-transition: opacity .1s;
-}
 .dimmed:hover{
 
 	opacity:1;
@@ -434,7 +442,7 @@ textarea:focus{
 	resize: vertical;
 }
 label, input, textarea  {
-	display:block;
+	display:inline-block;
 }
 
 .login{
