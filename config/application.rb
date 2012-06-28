@@ -13,6 +13,10 @@ end
 module Einarlove
 	class Application < Rails::Application
 
+		# Debugging on Heroku mail
+		config.action_mailer.delivery_method = :smtp
+		config.action_mailer.delivery_method = :smtp
+
 		# SMTP Settings for mail
 		config.after_initialize do
 			config.action_mailer.smtp_settings = {
@@ -28,6 +32,7 @@ module Einarlove
 			config.action_mailer.default_url_options = {
 				:host => "einarlove.com"
 			}
+
 		end
 
 		# add app/assets/fonts to the asset path
