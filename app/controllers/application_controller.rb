@@ -14,6 +14,6 @@ class ApplicationController < ActionController::Base
   end
 
   def admin?
-  	session[:username] == "admin" and session[:password] == "admin"
+  	session[:username] == SENSITIVE["username"] and session[:password] == SENSITIVE["password"]
   end
 end
