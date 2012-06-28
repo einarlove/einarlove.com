@@ -1,4 +1,24 @@
 Einarlove::Application.configure do
+
+
+  # SMTP Settings for mail
+  config.after_initialize do
+    ActionMailer::Base.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "einarlove.com",
+      :user_name            => "gmail@einarlove.com",
+      :password             => SENSITIVE["mail_password"],
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "einarlove.com"
+    }
+  end
+
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on

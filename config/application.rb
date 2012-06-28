@@ -13,27 +13,6 @@ end
 module Einarlove
 	class Application < Rails::Application
 
-		# Debugging on Heroku mail
-		config.action_mailer.delivery_method = :smtp
-		config.action_mailer.delivery_method = :smtp
-
-		# SMTP Settings for mail
-		config.after_initialize do
-			config.action_mailer.smtp_settings = {
-				:address              => "smtp.gmail.com",
-				:port                 => 587,
-				:domain               => "einarlove.com",
-				:user_name            => "gmail@einarlove.com",
-				:password             => SENSITIVE["mail_password"],
-				:authentication       => :plain,
-				:enable_starttls_auto => true
-			}
-
-			config.action_mailer.default_url_options = {
-				:host => "einarlove.com"
-			}
-
-		end
 
 		# add app/assets/fonts to the asset path
 		config.assets.paths << Rails.root.join("app", "assets", "fonts")
