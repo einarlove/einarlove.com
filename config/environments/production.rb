@@ -3,20 +3,16 @@ Einarlove::Application.configure do
   # SMTP Settings for mail
   config.after_initialize do
     ActionMailer::Base.smtp_settings = {
-      :address              => "smtp.sendgrid.net",
+      :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => "heroku.com",
+      :domain               => SENSITIVE["mail_username"],
       :user_name            => SENSITIVE["mail_username"],
       :password             => SENSITIVE["mail_password"],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
-    config.action_mailer.default_url_options = {
-      :host => "einarlove.com"
-    }
     ActionMailer::Base.delivery_method = :smtp
   end
-
 
 
   # Settings specified here will take precedence over those in config/application.rb
