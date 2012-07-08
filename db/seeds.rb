@@ -68,7 +68,7 @@ My group conducted usability evaluation with test users, analysis, design and a 
 		body: "
 		The Norwegian artist Synøve Dyrkorn was in need for a website for her artworks.
 
-I was contacted by the chosen designer which needed me to take the work for the frontend code, markup and construct a gallery view.",
+I was contacted by the chosen designer which needed me to take the work for the frontend code, markup and to construct a gallery view.",
 		image: "synovedyrkorn.jpg",
 		involvement: ["Frontend", "Image gallery"],
 		links: [["Synøve's homepage", "http://www.sdyrkorn.no"]],
@@ -76,9 +76,9 @@ I was contacted by the chosen designer which needed me to take the work for the 
 	},
 	{
 		title: "Iyengar yoga",
-		body: "As a school project we were confronted by the local Iyengar yoga practicians which wanted a new homepage for not only one center, but nationaly.
+		body: "As a school project we were confronted by the local Iyengar yoga practicians who wanted a homepage that would represent all the Iyengar yoga practicians nationaly.
 
-Alot of energy was put in to manage all the the information that would be stored on the site, and not create a cliché yoga theme.",
+Our main goal was to create an easy accessibly navigation, and stay clear from the cliché associations to yoga, due to client request.",
 		image: "iyengar-yoga.jpg",
 		involvement: ["Frontend", "Information architecture"],
 		links: [["Iyengar yoga", "/view/iyengaryoga/"]],
@@ -86,9 +86,9 @@ Alot of energy was put in to manage all the the information that would be stored
 	},
 	{
 		title: "2012 Calendar",
-		body: "I recently had the need to have a full year calendar for print which did not look corporate and excel'ish, so I made my own.
+		body: "I recently had the need to have a full year calendar for print which did not look corporate or originate from excel, so I made my own.
 
-I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL + P</code> if your on windows.",
+I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL+P</code> if you're on windows.",
 		image: "2012-calendar.jpg",
 		links: [["2012 Calendar", "/view/2012calendar.html"]],
 		visible: true
