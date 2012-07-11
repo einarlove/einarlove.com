@@ -5,6 +5,7 @@
 	%meta{name: "keywords", content: "Interaction designer, Einar Löve, Einar Ágúst Löve, Einar Løve, Einar August Loeve, einsikaldi, tittleabbo, Portfolio, design, icelandic, norway, NKF, Oslo, freelance web designer, user experience"}
 	= stylesheet_link_tag "reset", :media => "all"
 	= stylesheet_link_tag "main", :media => "all"
+	= render "shared/typekit"
 	/[if lt IE 9]
 		= stylesheet_link_tag "oldie", :media => "all"
 		%script{src:"/assets/html5shiv.js", type: "text/javascript"}
@@ -15,7 +16,7 @@
 				%h1 Einar Löve
 				%h2 Interaction designer
 		%nav
-			= render "layouts/navigation"
+			= render "shared/navigation"
 	%section.portfolio_item
 		= yield
 
@@ -28,4 +29,4 @@
 			%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
 				@einarlove
 
-	= render "layouts/analystics" if Rails.env == 'production'
+	= render "shared/analystics" if Rails.env == 'production'
