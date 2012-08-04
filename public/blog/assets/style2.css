@@ -1,0 +1,501 @@
+@charset "UTF-8";
+/*—————————————————————————————————————————
+
+  Stylesheet for einarlove.com/blog
+  Created by Einar Löve
+
+  Tested on devices:
+    iPhnoe 3G, HTC Desire (Android 2.1), Macbook Pro 15'
+  Devices to be tested:
+    Retina Macbook, iPad, iPhone 4, Android tablet, TV
+
+  Structure:
+    Reset
+    General
+    Article
+      — Header
+      — Description
+      — Content
+      — Images
+      — Code
+    Sidebar
+    Comments
+    Adaptive adjustments
+    Vendor specifics & magic
+
+  Type:
+    Main:     Skolar
+    Fallback: Alegreya, Palatino, Georgia
+
+  Sizes explained:
+    .875em  = 14px
+    1em     = 16px
+    1.125em = 18px
+    1.5em   = 24px
+
+  Colors:
+    Lightgray: rgba(0,0,0,.4) / #999
+    gray:      rgba(0,0,0,.6) / #636363  
+    Darkgray:  rgba(0,0,0,.8) / #1e1e1e
+
+
+
+/* Reset
+———————————————————————————————————————— */
+
+body,div,dl,dt,dd,
+ul,ol,li,
+h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,
+input,textarea,
+p,blockquote,th,td { 
+  padding:0;
+  margin:0;
+}
+article, aside, section, footer,
+figure, figcaption,
+header, hgroup, menu, nav {
+  display:block;
+}
+address,caption,cite,
+code,dfn,em,
+strong,th,var {
+  font-weight:normal;
+  font-style:normal;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+}
+ol,ul {
+  list-style:none;
+  padding:0;
+}
+
+
+
+/* General
+———————————————————————————————————————— */
+
+html{ background:#f8f8f8; }
+body{
+  max-width:1288px;
+  margin:0 auto;
+  background:#f8f8f8;
+  font:100%/1.6em skolar, Alegreya, Palatino, Georgia, serif;
+  color:#1e1e1e;
+  color:rgba(0,0,0,.8);
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+h1{
+  margin:.8em 0;
+  font-size:1.5em;
+}
+
+/*————— ClearFix —————*/
+
+body:after,
+article header:after,
+article .codeblock:after{
+  content:"";
+  display:table;
+  width:100%;
+}
+
+
+
+/* Article
+———————————————————————————————————————— */
+
+article{
+  position:relative;
+  width:70%;
+  float:left;
+  padding:6em 0 4em;
+  background:white;
+}
+
+/*————— Header —————*/
+
+article h1{
+  margin:.8em 5% .8em 25%;
+  text-transform:uppercase;
+}
+article header img{
+  max-width:100%;
+  margin-bottom:1.2em;
+  float:right;
+}
+
+/*————— Description —————*/
+
+article aside{
+  position:absolute;
+  width:23%;
+  padding-top:.1em;
+  font-size:0.875em;
+  text-align:right;
+  text-transform:capitalize;
+  color:#999;
+  color:rgba(0,0,0,.4);
+  cursor:default;
+}
+article span{
+  display:block;
+}
+article aside a,
+article aside time{
+  color:#666;
+  color:rgba(0,0,0,0.6);
+  border:none;
+  text-transform:none;
+}
+article a:hover{
+  color:#1e1e1e;
+  color:rgba(0,0,0,.8);
+}
+
+/*————— Content —————*/
+
+article section{
+  width:66.6%;
+  padding-left:25%;
+}
+article h2{
+  margin:1em 0 .2em;
+  font-size:1.2em;
+}
+article p{
+  margin:0 0 1em;
+}
+article section a{
+  border-bottom:1px dashed #bbb;
+  padding-bottom: .1em;
+}
+/*article section a:visited{
+  border-bottom-color:gray;
+}*/
+article section a:hover{
+  border-bottom:1px solid black;
+}
+article section ol{
+  list-style:decimal;
+  padding-left:2em;
+}
+article section li{
+  margin:.5em 0;
+}
+/*————— Figure —————*/
+
+article section img{
+  max-width:100%;
+}
+article figure{
+  position:relative;
+  width:100%;
+  max-width:600px;
+  margin:2em auto;
+}
+article figure figcaption{
+  position:absolute;
+  top:5%;
+  right:100%;
+  width:30%;
+  padding-right:1.2em;
+  font-size:0.875em;
+  font-style:italic;
+  color:#636363;
+  color:rgba(0,0,0,.6);
+}
+article figure figcaption a{
+  border-bottom:0;
+  font-weight:bold;
+}
+article figure:hover figcaption{
+  opacity:1;
+}
+
+/*————— Code —————*/
+
+article code,
+article .codeblock{
+  font-size:1em;
+  font-family:monospace, monospace;
+}
+article code:before{
+  content:"«"
+}
+article code:after{
+  content:"»"
+}
+article .codeblock{
+  margin:0.5em 0em;
+  padding:0.2em 0 0.2em 2em;
+  border-left:3px solid #ddd;
+  font-size:.875em;
+}
+
+
+
+/* Sidebar
+———————————————————————————————————————— */
+
+.sidebar{
+  width:25%;
+  padding:6em 0 0 2%;
+  float:left;
+  color:#636363;
+  color:rgba(0,0,0,.6);
+}
+.sidebar h2{
+  margin:.8em 0 .5em;
+  font-weight:400;
+  font-size:1.5em;
+  /* Disable the link */
+  pointer-events: none;
+  cursor: default;
+}
+
+/*————— Author section —————*/
+
+.sidebar #author p{
+  margin-bottom:1em;
+  font-style:italic;
+  font-size:.875em;
+}
+.sidebar #author p a{
+  color:#1e1e1e;
+  color:rgba(0,0,0,.8);
+}
+
+/*————— Articles section —————*/
+
+.sidebar #articles li{
+  padding:.3em 0;
+  font-style:italic;
+    /*white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;*/
+}
+
+
+
+/* Comments
+———————————————————————————————————————— */
+
+#comments{
+  width:70%;
+  padding-bottom:10em;
+  float:left;
+  background:white;
+}
+#comments > h2{
+  padding:1em 0;
+  text-transform:uppercase;
+  font-weight:normal;
+  font-size:1.5em;
+}
+#comments > ul,
+#comments > h2{
+  width:66.6%;
+  margin-left:25%;
+}
+#comments li{
+  display:block;
+  margin-top:2em;
+  padding-bottom:2em;
+  border-bottom:1px solid #eee;
+}
+#comments li img{
+  max-width:13%;
+  margin-right:1%;
+  float:left;
+  border-radius:100%;
+}
+#comments li > a{
+  font-style:italic;
+  font-weight:bold;
+}
+#comments li time{
+  display:block;
+  font-style:italic;
+  font-size:.875em;
+}
+#comments li p{
+  font-size:.875em;
+  margin-top:.5em;
+  margin-left:14%;
+}
+
+/* Adaptive adjustments
+———————————————————————————————————————— */
+
+/* Viewports wider then 1024px */
+@media (min-width:1024px){
+  section.sidebar{
+    width:20%;
+  }
+}
+
+/* Viewports narrower then 850px
+   or devices narrower then 480 */
+@media (max-width:850px), (max-device-width: 480px){
+  body{
+    padding:0 1em;
+    background:white;
+  }
+
+  /*————— Article —————*/
+
+  article{
+    width:100%;
+    padding:0;
+  }
+  article section,
+  article header h1{
+    padding:0;
+    margin:0;
+    width:auto;
+  }
+  article header h1{
+    margin:1em 0;
+  }
+
+  /*————— Aside —————*/
+
+  article aside{
+    position:static;
+    width:100%;
+    margin-bottom:1em;
+    text-align:left;
+    text-transform:none;
+  }
+  article aside span{
+    display:inline-block;
+  }
+
+  /*————— Links —————*/
+
+  article section a{
+    /*border-bottom:none;
+    font-weight:bold;
+    font-style:italic;*/
+
+  }
+
+  /*————— Figure —————*/
+
+  article figure figcaption{
+    position:static;
+    width:100%;
+    padding:0;
+    margin-top:1em;
+    font-size:.875em;
+  }
+
+  /*————— Read more —————*/
+
+  .sidebar{
+    width:auto;
+    padding:0;
+  }
+  .sidebar section{
+    padding: 1em 0;
+  }
+  .sidebar section h2:before{
+    content:'Read ';
+    text-transform:capitalize;
+  }
+  .sidebar section h2{
+    text-transform:lowercase;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .sidebar section > p,
+  .sidebar section > ul{
+    display:none;
+  }
+  #author:target > p{
+    display:block;
+  }
+  #articles:target > ul{
+    display:block;
+  }
+  #articles li:last-child{
+    font-weight:bold;
+  }
+
+  /*————— Comments —————*/
+
+  #comments{
+    width:100%;
+  }
+  #comments > h2,
+  #comments > ul{
+    width:auto;
+    margin:0;
+  }
+}
+
+/* Viewports narrower then 480px  */
+@media (max-width:480px), (max-device-width: 240px){
+  article header h1{
+    text-transform:none;
+    font-style:italic;
+  }
+  article header img,
+  article aside{
+    display:none;
+  }
+  #comments li img{
+    display:none;
+  }
+  #comments li p{
+    margin:0;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  body{
+    font-size:150%;
+  }
+}
+
+/* Vendor specifics & magic
+———————————————————————————————————————— */
+
+/*---- Enable ligatures & kerning ----*/
+body{
+  text-rendering:optimizeLegibility;
+  -moz-font-feature-settings:"liga=1, dlig=1", "kern=1";
+  -ms-font-feature-settings:"liga", "dlig", "kern";
+  -o-font-feature-settings:"liga", "dlig", "kern";
+  -webkit-font-feature-settings:"liga", "dlig", "kern";
+  font-feature-settings:"liga", "dlig", "kern";
+}
+/*---- Smoothing out headers with no hint ----*/
+h1,
+h2{
+  text-shadow:0 0 1px rgba(0,0,0,.4);
+}
+figcaption{
+  -webkit-transition:opacity .4s;
+  -moz-transition:opacity .4s;
+  -ms-transition:opacity .4s;
+  -o-transition:opacity .4s;
+  transition:opacity .4s;
+}
+section a{
+  -webkit-transition:border-bottom .1s;
+  -moz-transition:border-bottom .1s;
+  -ms-transition:border-bottom .1s;
+  -o-transition:border-bottom .1s;
+  transition:border-bottom .1s;
+}
+::-moz-selection,
+::selection{
+  background:#363636;
+  color:white;
+}

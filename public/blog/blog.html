@@ -1,0 +1,39 @@
+<!doctype html>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="assets/style.css">
+<script type="text/javascript" src="http://use.typekit.com/ori0nli.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<article>
+	<h1>Use your butler for what he's worth</h1>
+	<p>Throughout the week I need to write down quotes, ideas, todos, email drafts and much more, and since I do this so frequently I want a quick and seamless solution.<br>
+One great application to take and search notes is Notational Velocity, but I want to write in markdown in my preferred editor, quicker access, backup solution and sync to my PC and Android phone.<br>
+After I installed the powerpack addon for Alfred I discovered a solution that would automate all the work for me, and I would like to share my hack with you.</p>
+	<h2>Demonstration</h2>
+	<p>If I get the urge to write down something, I press <code>⌘+space</code> to display Alfred, write <code>md</code> and a preferred name for the note.</p>
+	<img src="assets/md_example.jpg" alt="">
+	<p>When i hit Enter, Alfred creates a new markdown document in <code>~/dropbox/Archive</code> with the filename I specified, and then opens that document in iA Writer. While I write, the document synchronizes to my other devices for easy access.<br>
+In addition to being able to use Notational Velocity's blazing fast search, I wanted a quicker way which didn't require the hassle of opening the application. So I made it possible to search for a note in a simple way using Alfred.</p>
+	<img src="assets/derren_brown.jpg" alt="">
+	<p>I hit Enter and the note opens in iA Writer.</p>
+	<h2>Walkthrough</h2>
+	<p>Everything I do in this walkthrough except Alfred is optional, and can be replaced by names, applications and extensions to your liking. 
+To follow the walkthrough firmly, you'll need <a href="http://www.iawriter.com/">iA Writer</a>, <a href="http://notational.net/">Notational Velocity</a>, <a href="http://db.tt/9TJqDQ5">Dropbox</a> and <a href="http://www.alfredapp.com/">Alfred</a> with Powerpack.
+</p>
+	<ol>
+		<li>Start by creating a folder in Dropbox named Archive.</li>
+		<li>Open Notational Velocity's Preferences and select iA Writer in the External Editor dropdown.</li>
+		<li>Click on the "Notes" tab and select your newly created folder in the dropdown in the "Read notes from folder" option</li>
+		<li>Close Notational Velocity and open Terminal. Write:
+			<p class="codeblock">
+				cd ~/dropbox/Archive <br>
+				chflags hidden Notes\ \&\ Settings <br>
+				chflags hidden Interim\ \Note-Changes
+			</p>
+To hide Notational Velocity's settings files from finder.</li>
+		<li>Download *this* and *this file*. Open up Alfred(with powerpack installed) and navigate to the Extensions tab in the preferences. Find the newly downloaded files and drop them in the "Drop to install" square in the bottom right corner.</li>
+	</ol>
+	<p>It's now ready, so open up Alfred with <code>⌘+space</code> and type <code>md</code> as a keyword and write a name for your note and hit enter.
+iA Writer should now open up, so write something clever. Close and open Alfred. To search for a note you write <code>arc</code> plus something from the filename.</p>
+	<p>After a couple of weeks you will forget the name of the file, and then its as easy as opening up Notational Velocity and use its comprehensive search. This method is very customizable, so you can use other editors, different file extension, another cloud service and your own names and keywords.</p>
+	<p>With Alfred's extesions you can simplify tasks like searching for synonyms, rake tasks, updating status and tweet, clean desktop and much more. So create your own scripts and share them.</p>
+</article>

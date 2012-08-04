@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*RESET*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	padding: 0;
+	margin: 0;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset,img { 
+	border: 0;
+	}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ol,ul {
+	list-style: none;
+	}
+caption,th {
+	text-align: left;
+	}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+q:before,q:after {
+	content:'';
+	}
+
+
+article{
+	width: 700px;
+	margin: 0 auto 300px auto;
+	font:16px/24px "Sorts Mill Goudy";
+}
+h1{
+	font-variant:small-caps;
+	font-size:30px;
+	text-align: center;
+	margin: 135px 0 100px 0;
+}
+h2{
+	font-size:24px;
+	margin:20px 0 2px 0;
+	font-style:italic;
+}
+img{
+	margin:0 0 15px 0;
+}
+p{
+	margin:0 0 0.7em 0;
+}
+h1+p:first-letter{
+	height:48px;
+	font-size:48px;
+	line-height:54px;
+	display:inline-block;
+	margin:0 5px 0 0;
+	float:left;
+}
+ol{
+	list-style:decimal;
+	list-style-position:inside;
+	margin-bottom: 10px;
+}
+code{
+	font-size:14px
+}
+code:before{
+	content:"«";
+}
+code:after{
+	content:"»";
+}
+a, a:visited, a:active{
+	color:black;
+	text-decoration:none;
+	border-bottom:1px solid;
+	font-style:italic;
+}
+.codeblock{
+	font-family: monospace;
+	font-size:14px;
+	border-left:solid 1px #aaa;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
