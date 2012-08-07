@@ -22,3 +22,6 @@ test/
 
 #Ignore sketches in design folder
 design/sketch/
+
+#Lets just ignore the whole design folder altogether 
+design/
