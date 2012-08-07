@@ -13,13 +13,9 @@
     Reset
     General
     Article
-      — Header
-      — Description
-      — Content
-      — Images
-      — Code
     Sidebar
     Comments
+    Article archive
     Adaptive adjustments
     Vendor specifics & magic
 
@@ -89,16 +85,12 @@ a{
   text-decoration:none;
   color:inherit;
 }
-h1{
-  margin:.8em 0;
-  font-size:1.5em;
-}
 
 /*————— ClearFix —————*/
 
 body:after,
-article header:after,
-article .codeblock:after{
+article.entry header:after,
+article.entry .codeblock:after{
   content:"";
   display:table;
   width:100%;
@@ -109,7 +101,7 @@ article .codeblock:after{
 /* Article
 ———————————————————————————————————————— */
 
-article{
+article.entry{
   position:relative;
   width:70%;
   float:left;
@@ -119,11 +111,12 @@ article{
 
 /*————— Header —————*/
 
-article h1{
+article.entry h1{
   margin:.8em 5% .8em 25%;
+  font-size:1.5em;
   text-transform:uppercase;
 }
-article header img{
+article.entry header img{
   max-width:100%;
   margin-bottom:1.2em;
   float:right;
@@ -131,7 +124,7 @@ article header img{
 
 /*————— Description —————*/
 
-article aside{
+article.entry aside{
   position:absolute;
   width:23%;
   padding-top:.1em;
@@ -142,63 +135,63 @@ article aside{
   color:rgba(0,0,0,.4);
   cursor:default;
 }
-article span{
+article.entry span{
   display:block;
 }
-article aside a,
-article aside time{
+article.entry aside a,
+article.entry aside time{
   color:#666;
   color:rgba(0,0,0,0.6);
   border:none;
   text-transform:none;
 }
-article a:hover{
+article.entry a:hover{
   color:#1e1e1e;
   color:rgba(0,0,0,.8);
 }
 
 /*————— Content —————*/
 
-article section{
+article.entry section{
   width:66.6%;
   padding-left:25%;
 }
-article h2{
+article.entry h2{
   margin:1em 0 .2em;
   font-size:1.2em;
 }
-article p{
+article.entry p{
   margin:0 0 1em;
 }
-article section a{
+article.entry section a{
   border-bottom:1px dashed #bbb;
   padding-bottom: .1em;
 }
-/*article section a:visited{
+/*article.entry section a:visited{
   border-bottom-color:gray;
 }*/
-article section a:hover{
+article.entry section a:hover{
   border-bottom:1px solid black;
 }
-article section ol{
+article.entry section ol{
   list-style:decimal;
   padding-left:2em;
 }
-article section li{
+article.entry section li{
   margin:.5em 0;
 }
 /*————— Figure —————*/
 
-article section img{
+article.entry section img{
   max-width:100%;
 }
-article figure{
+article.entry figure{
   position:relative;
   width:100%;
   max-width:600px;
   margin:2em auto;
 }
-article figure figcaption{
+article.entry figure figcaption{
   position:absolute;
   top:5%;
   right:100%;
@@ -209,28 +202,28 @@ article figure figcaption{
   color:#636363;
   color:rgba(0,0,0,.6);
 }
-article figure figcaption a{
+article.entry figure figcaption a{
   border-bottom:0;
   font-weight:bold;
 }
-article figure:hover figcaption{
+article.entry figure:hover figcaption{
   opacity:1;
 }
 
 /*————— Code —————*/
 
-article code,
-article .codeblock{
+article.entry code,
+article.entry .codeblock{
   font-size:1em;
   font-family:monospace, monospace;
 }
-article code:before{
+article.entry code:before{
   content:"«"
 }
-article code:after{
+article.entry code:after{
   content:"»"
 }
-article .codeblock{
+article.entry .codeblock{
   margin:0.5em 0em;
   padding:0.2em 0 0.2em 2em;
   border-left:3px solid #ddd;
@@ -329,6 +322,71 @@ article .codeblock{
   margin-left:14%;
 }
 
+
+
+/* Article archive
+———————————————————————————————————————— */
+
+body.archive{
+  max-width:1000px;
+  padding:4em 3% 10em;
+  background:white;
+}
+
+/*————— Archive header —————*/
+
+.archive header{
+  margin: 2em 0 3em;
+  text-align:center;
+  font-style:italic;
+}
+.archive header h1{
+  font-size:2em;
+}
+.archive header h2:before,
+.archive header h2:after{
+  content:"—";
+  padding: .2em 0;
+}
+
+/*————— Archive articles —————*/
+
+.archive article{
+  width:32%;
+  margin:1em 1% 0 0;
+  float:left;
+}
+.archive article:first-of-type{
+  width:65%;
+}
+.archive article:nth-of-type(3n+3){
+  clear:left;
+} 
+.archive article aside{
+  font-size:.875em;
+  font-style:italic;
+}
+.archive article p{
+  font-size:.875em;
+}
+
+/*————— Archive article links —————*/
+
+.archive article a{
+  font-style:italic;
+  font-weight:bold;
+  white-space:nowrap;
+  color: #1e1e1e;
+}
+.archive article a:after{
+  content:" ›";
+}
+.archive article a:hover:after{
+  content:" »";
+}
+
+
+
 /* Adaptive adjustments
 ———————————————————————————————————————— */
 
@@ -349,36 +407,36 @@ article .codeblock{
 
   /*————— Article —————*/
 
-  article{
+  article.entry{
     width:100%;
     padding:0;
   }
-  article section,
-  article header h1{
-    padding:0;
-    margin:0;
+  article.entry section,
+  article.entry header h1{
     width:auto;
+    margin:0;
+    padding:0;
   }
-  article header h1{
+  article.entry header h1{
     margin:1em 0;
   }
 
   /*————— Aside —————*/
 
-  article aside{
+  article.entry aside{
     position:static;
     width:100%;
     margin-bottom:1em;
     text-align:left;
     text-transform:none;
   }
-  article aside span{
+  article.entry aside span{
     display:inline-block;
   }
 
   /*————— Links —————*/
 
-  article section a{
+  article.entry section a{
     /*border-bottom:none;
     font-weight:bold;
     font-style:italic;*/
@@ -387,7 +445,7 @@ article .codeblock{
 
   /*————— Figure —————*/
 
-  article figure figcaption{
+  article.entry figure figcaption{
     position:static;
     width:100%;
     padding:0;
@@ -437,16 +495,32 @@ article .codeblock{
     width:auto;
     margin:0;
   }
+
+  /*————— Article archive —————*/
+
+  .archive article{
+    width:49%;
+  }
+  .archive article:first-of-type{
+    width:100%;
+  }
+  .archive article:nth-of-type(3n+3){
+    clear:none;
+  } 
+  .archive article:nth-of-type(2n+2){
+    clear:left;
+  }
+
 }
 
 /* Viewports narrower then 480px  */
 @media (max-width:480px), (max-device-width: 240px){
-  article header h1{
+  article.entry header h1{
     text-transform:none;
     font-style:italic;
   }
-  article header img,
-  article aside{
+  article.entry header img,
+  article.entry aside{
     display:none;
   }
   #comments li img{
@@ -455,13 +529,33 @@ article .codeblock{
   #comments li p{
     margin:0;
   }
+
+  /*————— Article archive —————*/
+
+  .archive article{
+    width:100%;
+    position: relative;
+    text-align:center;
+  }
+  .archive article p{
+    height:0;
+    overflow: hidden;
+  }
+  .archive article a{
+    position: absolute;
+    top:0;right:0;bottom:0;left:0;
+    font-size:0;
+  }
 }
 
+/* Increase on text size on higher PPI devices  */
 @media screen and (-webkit-min-device-pixel-ratio: 1.5) {
   body{
     font-size:150%;
   }
 }
+
+
 
 /* Vendor specifics & magic
 ———————————————————————————————————————— */
@@ -474,11 +568,6 @@ body{
   -o-font-feature-settings:"liga", "dlig", "kern";
   -webkit-font-feature-settings:"liga", "dlig", "kern";
   font-feature-settings:"liga", "dlig", "kern";
-}
-/*---- Smoothing out headers with no hint ----*/
-h1,
-h2{
-  text-shadow:0 0 1px rgba(0,0,0,.4);
 }
 figcaption{
   -webkit-transition:opacity .4s;
