@@ -11,7 +11,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120622025748) do
+ActiveRecord::Schema.define(:version => 20120813215759) do
+
+  create_table "articles", :force => true do |t|
+    t.string   "title"
+    t.string   "author"
+    t.text     "content"
+    t.string   "topic"
+    t.boolean  "published"
+    t.string   "slug"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+    t.text     "content_html"
+  end
+
+  create_table "images", :force => true do |t|
+    t.string   "name"
+    t.string   "title"
+    t.string   "credit"
+    t.string   "caption"
+    t.string   "extension"
+    t.string   "url"
+    t.integer  "article_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "pages", :force => true do |t|
     t.string   "name"

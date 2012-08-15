@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/vmg/redcarpet.git
+  revision: e7f328cd38985da7e7441aff17813132ff0e479a
+  specs:
+    redcarpet (2.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -112,6 +118,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.3)
+  redcarpet!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

@@ -8,6 +8,7 @@ class AdminController < ApplicationController
   	@description = "Overview"
   	@pages = Page.all
   	@portfolio = PortfolioItem.all
+    @articles = Article.all
   end
 
 	def login

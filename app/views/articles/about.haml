@@ -1,0 +1,27 @@
+%body.archive
+  %header
+    %h1 All posts &amp; articles
+    %h2
+      %a{href:"//einarlove.com/about"}
+        about 
+        = params[:topic]
+  - @articles.each_with_index do |article, index|      
+    %article
+      %h1= article.title
+      %aside
+        On 
+        %time{pubdate:true, time:article.created_at.strftime("%F")}
+          = article.created_at.strftime("%B %eth, %Y")
+        about 
+        = article.topic
+
+      %p
+        - if index == 0 then count = 700 else count = 300 end
+        - content = article.content_html.to_s
+        - regex = /<figure(.*?)<\/figure>/
+        - content = content.gsub(/\n/,"")
+        - content = content.gsub(regex," … ")
+        - content = strip_tags(content)
+        = content.first(count).html_safe + "… "
+        %a{href:"article/#{article.slug}", title:"Read the whole article"} View the whole article
+

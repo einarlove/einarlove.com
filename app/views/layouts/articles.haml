@@ -1,0 +1,14 @@
+!!! 5
+%meta{charset: "utf-8"}
+%title= article.title || @page_title
+%meta{name:"viewport", content:"width=device-width, target-densityDpi=device-dpi, maximum-scale=1"}
+-#= auto_discovery_link_tag :rss, "http://einarlove.com/articles"
+%link{rel:"stylesheet", href:"/assets/article-style.css"}
+%script{type:"text/javascript", src:"http://use.typekit.com/mec7tyw.js"}
+%script{type:"text/javascript"}
+  try{Typekit.load();}catch(e){}
+
+= yield
+
+%script
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')

@@ -9,6 +9,14 @@ Einarlove::Application.routes.draw do
 	post '/login' => "admin#login"
 	get '/logout' => "admin#logout"
 
+	#Articles
+	resources :articles, path: 'article'
+	match '/article' => redirect('/articles')
+	match '/blog' => redirect('/articles')
+	match '/articles' => 'articles#index'
+	match '/articles/about/:topic' => 'articles#about'
+	get '/article/:id/:name.:extension' => 'articles#image'
+
 	#Pages
 	resources :pages
 	get '/:id' => 'pages#show'

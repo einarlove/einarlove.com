@@ -1,0 +1,21 @@
+= render "admin/header"
+
+= form_for article do |f|
+  .one_column
+    %div
+      = f.label :title, "Title"
+      = f.text_field :title 
+    %div
+      = f.label :author 
+      = f.text_field :author
+    %div
+      = f.label :published
+      = f.check_box :published
+    %div
+      = f.label :topic, "Article topic"
+      = f.select(:topic, ["testing", "HTML & CSS", "productivty"])
+  .two_columns
+    = f.label :content, "Article"
+    = f.text_area :content
+
+    = f.submit

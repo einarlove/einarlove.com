@@ -1,0 +1,83 @@
+
+%article.entry
+  %header
+    %h1= article.title
+    %img{src:"/article_images/#{article.id}_poster.jpg"}
+  %aside
+    %span
+      By 
+      %adress
+        %a{rel:"author", href:"//einarlove.com"}
+          = article.author
+    %span
+      on 
+      %time{pubdate:true, datetime:"2012-07-23"}
+        = article.created_at.strftime("%B %eth, %Y")
+    %span
+      about 
+      %a{href:"/articles/about/#{article.topic}", title:"View other articles about #{article.topic}"}
+        = article.topic
+    -#%span
+      with 
+      %a{href:"#comments", title:"Jump down to comments"}
+        4 comments
+  %section
+    = article.content_html.html_safe
+%section.sidebar
+  %section#author
+    %h2
+      %a{href:"#author"}
+        About the author
+    %p
+      My name is Einar Ágúst Löve and I'm an Icelander living and studying Interaction design at Norway's school of creativity in Oslo. This blog is a place for me to express my thoughts about design, programming, and other topics that I find interesting. 
+    %p
+      My portfolio is on 
+      %a{target:"_blank", href:"//einarlove.com"}
+        einarlove.com
+      and you can contact me on twitter at 
+      %a{href:"//twitter.com/einarlove"}
+        @einarlove
+  %section#articles
+    %h2
+      %a{href:"#articles"}
+        Other articles
+    %ul
+      - articles.each do |article_item|
+        - unless article_item.id == article.id
+          %li
+            %a{href:"/article/#{article_item.slug}", title:"Read the article '#{article_item.title}' about #{article_item.topic}"}
+              = article_item.title
+      - if articles.count > 5
+        %li
+          %a{href:"/articles", title:"View all articles in archive"}
+            View all articles
+-# %section#comments
+  %h2 4 Comments
+  %ul
+    %li
+      %img{src:"assets/avatars/gammel.jpeg", alt:"William Johnson"}
+      %a{href:"#"} William Johnson
+      %time August the 7th, 2012
+      %p
+        Great article. My advice would be to check yourself for AD.
+    </li>
+    %li
+      %img{src:"assets/avatars/maria.jpeg", alt:"Maria Zarzonle"}
+      %a{href:"#"} Maria Yarzonle
+      %time August the 8th, 2012
+      %p
+        When someone procrastinates, the choice is usually the most time consuming part. They waver between thinking about working on whatever they have to work on and putting it off. Putting off work is only gratifying for that movement or for a short time there after, as eventually it will have to be done. For me this procrastination was with projects, and not just any project, but ones that were due weeks later than they were assigned.
+    </li>
+    %li
+      %img{src:"assets/avatars/kitten.jpeg", alt:"Einar Löve"}
+      %a{href:"#"} Einar Löve
+      %time August the 8th, 2012
+      %p
+        Hehe you're right. But big tasks is't always the case. Sometimes the smallests of tasks can be procrastinated.
+    </li>
+    %li
+      %img{src:"assets/avatars/erik.jpeg", alt:"Erik von Gaudalswin"}
+      %a{href:"#"} Erik von Gaudalswin
+      %time August the 16th, 2012
+      %p
+        Consider move away from the computer for some time to get a pause. it helps me atleast.

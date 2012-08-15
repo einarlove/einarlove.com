@@ -300,22 +300,13 @@ input[type="checkbox"]:afte{
 .video_container video{
   width:100%;
   opacity:0.5;
-  -webkit-transition:opacity .2s;
-  -moz-transition:opacity .2s;
-  -ms-transition:opacity .2s;
-  -o-transition:opacity .2s;
-  transition:opacity .2s;
-}
-
-.video_container:hover video{
-  opacity:1;
 }
 
 .video_controller{
   position:absolute;
   top:50%;
   left:50%;
-  background:black;
+  background-color:#222;
   background-position:center;
   width:100px;
   height:50px;
@@ -329,6 +320,15 @@ input[type="checkbox"]:afte{
   -ms-transition:opacity .2s;
   -o-transition:opacity .2s;
   transition:opacity .2s;
+}
+
+.video_container:hover .video_controller{
+  background-color:black;
+  -webkit-transition:background-color .2s;
+  -moz-transition:background-color .2s;
+  -ms-transition:background-color .2s;
+  -o-transition:background-color .2s;
+  transition:background-color .2s;
 }
 
 .playing .video_container{
@@ -456,6 +456,9 @@ input[type="checkbox"]:afte{
   min-height:63px;
 }
 
+.dimmed{
+  opacity:.5;
+}
 .dimmed:hover{
   opacity:1;
 }
@@ -464,7 +467,7 @@ textarea{
   border:solid 1px #e0e0e0;
   font-size:14px;
   min-height:8em;
-  width:290px;
+  width:100%;
   padding:15px;
   resize:none;
   font-family:inherit;

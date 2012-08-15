@@ -1,3 +1,6 @@
+if !defined?(YAML::ENGINE).nil? && YAML::ENGINE.respond_to?(:yamler)
+  YAML::ENGINE.yamler = 'syck'
+end
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.3'
@@ -14,6 +17,9 @@ end
 
 # Added for templating html
 gem 'haml', '3.1.4'
+
+# Markdown renderer
+gem 'redcarpet', :git => 'git://github.com/vmg/redcarpet.git'
 
 # Gems used only for assets and not required
 # in production environments by default.

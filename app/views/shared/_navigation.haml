@@ -1,6 +1,6 @@
 %ul
 	-if admin?
-		- if params[:controller] == "admin"
+		- if params[:controller] == "admin" or ["new", "edit"].include? params[:action]
 			- admin_current = "current_page"
 		%li
 			%a{href:"/admin", title:"Admin area", class: admin_current} Admin	
