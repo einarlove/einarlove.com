@@ -12,7 +12,7 @@ class ArticlesController < ApplicationController
 
   def about
     @page_title = "All articles about #{params[:topic]}"
-    @articles = Article.find_all_by_topic(params[:topic])
+    @articles = Article.where(topic: params[:topic]).order(:created_at).reverse_order
   end
 
   def new

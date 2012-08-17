@@ -23,5 +23,5 @@
         - content = content.gsub(regex," … ")
         - content = strip_tags(content)
         = content.first(count).html_safe + "… "
-        %a{href:"article/#{article.slug}", title:"Read the whole article"} View the whole article
+        %a{href:"/article/#{article.slug}", title:"Read the whole article"} View the whole article
 
