@@ -11,7 +11,7 @@
 		- item.links.each do |link|
 			%li
 				%a{href: link[1], target: "_blank"}= link[0]
-- if item.video == true
+- if item.video == true || "t"
 	.video_container.two_columns
 		%video{poster: "/portfolio/images/"+item.slug+".jpg"}
 			%source{src: "/portfolio/videos/"+item.slug+".mp4", type: 'video/mp4; codecs: "avc1.42E01E, mp4a.40.2"', autobuffer: true}
