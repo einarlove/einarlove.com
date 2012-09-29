@@ -1,0 +1,32 @@
+%head
+	%title= item.title
+	%meta{charset: "utf-8"}
+	%meta{name: "description", content: "Interaction designer Einar Löve's portfolio."}
+	%meta{name: "keywords", content: "Interaction designer, Einar Löve, Einar Ágúst Löve, Einar Løve, Einar August Loeve, einsikaldi, tittleabbo, Portfolio, design, icelandic, norway, NKF, Oslo, freelance web designer, user experience"}
+	= stylesheet_link_tag "reset", :media => "all"
+	= stylesheet_link_tag "main", :media => "all"
+	= render "shared/typekit"
+	/[if lt IE 9]
+		= stylesheet_link_tag "oldie", :media => "all"
+		%script{src:"/assets/html5shiv.js", type: "text/javascript"}
+%body
+	%header
+		%hgroup
+			%a{ href: "/", title:"Back to frontpage"}
+				%h1 Einar Löve
+				%h2 Interaction designer
+		%nav
+			= render "shared/navigation"
+	%section.portfolio_item
+		= yield
+
+	%footer
+		%div
+			%span Copyright 2012
+			%a{href:"/admin", title:"Einar Löve"} Einar Löve
+		%div
+			%span Contact me on twitter
+			%a{href:"http://twitter.com/einarlove", title:"Einar Löve", target:"_blank"}
+				@einarlove
+
+	= render "shared/analystics" if Rails.env == 'production'

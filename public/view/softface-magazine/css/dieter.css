@@ -1,0 +1,142 @@
+#dieterRams{
+  font-size:100%;
+  font-family: 'AdobeCaslonProRegular', Georgia, serif;
+  line-height:1.37em;
+  margin-bottom:15em;
+}
+#dieterRams h1,
+#dieterRams h2,
+#dieterRams h3{
+  font-family:"Helvetica Neue";
+  line-height:1.2em;
+}
+#dieterRams img{
+  max-width:100%;
+}
+#dieterRams > header{position: relative;}
+#dieterRams > header hgroup{
+  position: absolute;
+  top:29%;
+  left:15%;
+}
+#dieterRams > header h1{
+  font-size:3.75em;
+  margin:0;
+  line-height:1em;
+}
+#dieterRams > header h2{
+  font-size:2.25em;
+  margin:0;
+  color:#727272;
+}
+#dieterRams > header img{
+  width:100%;
+}
+
+#dieterRams .body{
+  max-width:625px;
+  margin: 2em auto;
+}
+#dieterRams section.leader{
+  font-size:1.125em;
+  line-height:1.333em;
+  width:80%;
+}
+#dieterRams section.history{
+  width:72%;
+  margin-top:1.5em;
+  margin-left:8%;
+}
+#dieterRams .video{
+  position: relative;
+  height:0;
+  padding-top:56.25%;
+}
+#dieterRams .video iframe{
+  position: absolute;
+  top:0;
+  width:100%;
+  height:100%;
+}
+#dieterRams section > h1{
+  margin-top:3em;
+  width:64%;
+}
+#dieterRams section.work ul{
+  width:72%;
+  margin-left:8%;
+  list-style-type: none;
+}
+
+#dieterRams section.principles ol{
+  width:56%;
+  margin:0 auto;
+  padding:0;
+  counter-reset:item;
+}
+#dieterRams section.principles ol li{
+  counter-increment:item;
+  list-style:none inside;
+  margin:3em 0;
+}
+#dieterRams section.principles ol li:before{
+  content: counter(item) ".";
+  font-family:"Helvetica Neue";
+  line-height:1.2em;
+  font-weight:bold;
+  font-size:1.75em;
+}
+#dieterRams section.principles h2{
+  font-size:1.75em;
+  margin:0;
+}
+#dieterRams section.principles p{
+  border-top:solid #999 1px;
+  margin-top:.8em;
+  padding-top:.8em;
+}
+
+@media(max-width:1000px){
+  #dieterRams > header hgroup{
+    top:23%;
+    left:11%;
+  }
+  #dieterRams > header h1{
+    font-size:3em
+  }
+  #dieterRams > header h2{
+    font-size:2em;
+  }
+}
+@media(max-width:800px){
+  #dieterRams > header hgroup{
+    font-size:80%;
+  }
+  #dieterRams > header hgroup{
+    left:8%;
+    top:32%;
+  }
+  #dieterRams section.leader,
+  #dieterRams section.history,
+  #dieterRams section.work ul,
+  #dieterRams section.principles ol{
+    width:100%;
+    margin-left:0;
+    padding-left:0;
+  }
+  #dieterRams .body{
+    padding:0 1em;
+  }
+  #dieterRams section.principles ol li{
+    width:80%;
+    margin:0 auto;
+  }
+}
+@media(max-width:600px){
+  #dieterRams > header hgroup{
+    top:30%;
+    left:6%;
+    font-size:50%;
+  }
+}
+

@@ -1,0 +1,28 @@
+= render "admin/header"
+
+= form_for item do |f|
+  .one_column
+    %div
+      = f.label :title, "Title"
+      = f.text_field :title
+    %div
+      = f.label :visible
+      = f.check_box :visible
+
+      = f.label :video
+      = f.check_box :video
+    %div
+      = f.label :involvement
+      = f.text_field :involvement
+    / %div
+    /   = f.label :links
+    /   = f.text_field :links
+  .two_columns
+    = f.label :body, "Description"
+    = f.text_area :body
+
+    = f.submit
+
+
+
+  / :body, :image, :involvement, :links, :title, :visible, :video, :slug

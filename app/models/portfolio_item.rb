@@ -3,9 +3,6 @@ class PortfolioItem < ActiveRecord::Base
   serialize :involvement
   serialize :links
 
-
-  belongs_to :portfolio
-
   extend FriendlyId
   friendly_id :title, use: :slugged
 end

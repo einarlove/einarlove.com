@@ -6,9 +6,9 @@
 		%h1= link_to "Pages", pages_path
 		= link_to "New", new_page_path
 		= link_to "View all", pages_path
-	.one_column{class: isNot("portfolio")}
-		%h1 Portfolio
-		= link_to "New", new_portfolio_path
+	.one_column{class: isNot("portfolio_items")}
+		%h1= link_to "Portfolio", "/portfolio"
+		= link_to "New", new_portfolio_item_path
 		= link_to "View all" , "/portfolio"
 	.one_column{class: isNot("articles")}
 		%h1= link_to "Articles", articles_path

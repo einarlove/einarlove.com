@@ -6,9 +6,9 @@ class AdminController < ApplicationController
 
   def index
   	@description = "Overview"
-  	@pages = Page.all
-  	@portfolio = PortfolioItem.all
-    @articles = Article.all
+  	@pages = Page.order("created_at DESC").all
+  	@portfolio = PortfolioItem.order("created_at DESC").all
+    @articles = Article.order("created_at DESC").all
   end
 
 	def login

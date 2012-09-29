@@ -23,7 +23,8 @@ Einarlove::Application.routes.draw do
 	get '/pages/:id/delete' => "pages#destroy"
 
 	#Portfolio
-	resources :portfolio
+	resources :portfolio_items
+	get '/portfolio/:id' => 'portfolio_items#show'
 
 	#Contact form
 	post '/contact' => 'pages#mail'

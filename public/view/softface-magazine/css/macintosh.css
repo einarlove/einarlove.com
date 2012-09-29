@@ -1,0 +1,63 @@
+#mac {
+	font-family: Times, "Times New Roman", serif;
+	background-color: #f9f1e3;
+}
+
+#mac header {
+	text-align: center;
+}
+
+#mac img[alt*="Apple"] {
+	padding-top: 3em;
+}
+
+#mac img[alt*="Porsche"] {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+#mac h1, #mac h2 {
+	font-weight: normal;
+	letter-spacing: -.1em;
+}
+
+#mac h1 {
+	font-size: 2.25rem;
+	margin-bottom: .2em;
+}
+
+#mac h2 {
+	font-size: 4rem;
+	line-height: .8;
+	width: 15rem;
+	margin: 0 auto;
+}
+
+#mac img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mac img {
+	max-width: 100%;
+}
+
+#mac .body {
+	max-width: 30.1em;
+	margin: 0 auto;
+}
+
+#mac .body img {
+	margin: 5em auto;
+}
+
+@media screen and ( max-width: 767px ) {
+	#mac header {
+		padding-top: 1em;
+	}
+
+	#mac .body {
+		padding: 0 1em;
+	}
+}

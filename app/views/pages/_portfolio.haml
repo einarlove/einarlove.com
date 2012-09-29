@@ -1,7 +1,7 @@
 %ul.portfolio_items
-	- PortfolioItem.all.each do |item|
+	- PortfolioItem.order("created_at DESC").all.each do |item|
 		- if current_page?("/portfolio/"+item.slug)
 			- current_item = "current_item"
 		%li
-			%a{ href: (portfolio_path item), class: current_item}
+			%a{ href: "/portfolio/#{item.slug}", class: current_item}
 				%img{src: "/portfolio/images/"+item.slug+"_thumb.jpg"}
