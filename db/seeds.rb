@@ -19,7 +19,7 @@
 # 	{name: "about",
 # 	title: "A short introduction",
 # 	description: "About me",
-# 	body: "My name is Einar Ágúst Löve, born in Iceland, raised in Norway but lived on the internet once it got its grip on me.
+# 	body: "My name is Einar Ágúst Löve, born in Iceland, raised in Norway but consider myself more as an internet citizen.
 
 # Studied media and communication in gymnas where I experienced film production, animation, graphic design, web design and illustration.
 
