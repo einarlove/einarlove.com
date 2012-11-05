@@ -1,0 +1,672 @@
+@charset "UTF-8";
+
+body{
+	margin:0;
+	padding:0;
+	font-family: Avenir, Segoe, "Helvetica Neue", sans-serif;
+	font-weight:100;
+	font-size:.875em;
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+a{
+	color: inherit;
+	text-decoration:none;
+}
+p a::after{
+	content:"»";
+}
+a:hover{
+	text-decoration:underline;
+}
+h2 > a{
+	display:block;
+	height:100%;
+	width: 100%;
+}
+
+/* Navigation bar
+—————————————————*/
+#nav_header{
+	position: absolute;
+	width:100%;
+	bottom:0;
+	padding:24px 0;
+	height:32px;
+	z-index:3;
+}
+#nav_header.sticky{
+	position: fixed;
+	top:0;
+}
+/*.header-background{
+	position: fixed;
+	top:0;
+	opacity: .7;
+	width: 100%;
+	height:110px;
+	z-index:1;
+	background:url("../images/meny-bg.png");
+	background-position: 0 -8px;
+	background-repeat:repeat-x;
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255,255,255,0.8)), color-stop(1, rgba(255,255,255,0)) );
+}*/
+#nav_header nav{
+	padding:0 12%;
+	margin:0 auto;
+}
+#nav_header h1{
+	float: left;
+}
+#nav_header ul{
+	float:right;
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+#nav_header ul li{
+	float:left;
+	margin-left:24px;
+	padding-top:6px;
+}
+
+/* All sections
+—————————————————————— */
+body > section{
+	min-height: 600px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+#intro{
+	z-index:2;
+	position: relative;
+	min-height: 600px;
+	background-image:url("../images/ForsideFilmStill.jpg");
+	background-position:center center;
+}
+#kunster{
+	background-image:url("../images/section-1.jpg");
+	background-position:center center;
+}
+#oyebryn{
+	height:838px;
+	background-image:url("../images/section-2.jpg");	
+	background-position:right center;
+}
+#kurs{
+	height:839px;
+	background-image:url("../images/section-3.jpg");
+	background-position:right top;
+}
+#produkter,
+#bgImageHolder{
+	background-image:url("../images/section-4.jpg");	
+	background-position:60% center;
+}
+#bgImageHolder.design{
+	background-image: url("../images/section-4-pinsett-design.jpg");
+}
+#bgImageHolder.ekspertise{
+	background-image:url("../images/section-4.jpg");	
+}
+#bgImageHolder.kosmetikk,
+#bgImageHolder.kvalitet{
+	background-image: url("../images/section-4-pinsett-kvalitet.jpg");
+}
+#bgImageHolder.glamour,
+#bgImageHolder.anerkjent{
+	background-image: url("../images/section-4-pinsett-anerkjent.jpg");
+}
+
+#kontakt{
+	height:799px;
+	background-image:url("../images/section-5.jpg");	
+}
+
+
+/* Individual sections
+——————————————————————*/
+body > section .content{
+	width:255px;
+	padding: 125px 80px 0 12%;
+	height:100%;
+	min-height:600px;
+	-webkit-transition: background 1s;
+}
+body > section .content > h1{
+	margin-bottom: 20px;
+}
+.section-groups{
+	position: relative;
+}
+
+/* Kurs */
+#kurs .content{
+	width:570px;
+	overflow:auto;
+}
+#kurs .content section{
+	margin-top:16px;
+	width:48%;
+	float:left;
+}
+#kurs .content section:last-child{
+	float:right
+}
+
+
+/* Produkter */
+#produkter{
+	position: relative;
+}
+#produkter .content{
+	width:365px;
+	position: relative;
+	z-index:1;
+}
+#produkter .content > h1{
+	margin-bottom: 29px;
+}
+#produkter .content nav h2{
+	margin-right:15px;
+}
+#produkter nav ul{
+	display:none;
+}
+#produkter nav .header-pinsett.active ~ .pinsett-nav,
+#produkter nav .header-oyeskygge.active ~ .oyeskygge-nav{
+	display:block;
+}
+#produkter nav > ul{
+	list-style: none;
+	margin:10px 0 36px;
+	padding:0;
+	overflow:auto;
+}
+#produkter nav > ul li{
+	float: left;
+	margin-right: 15px;
+	-webkit-transition:color .1s;
+}
+#produkter nav > ul li a:hover{
+	text-decoration: none;
+	opacity: .8;
+}
+nav > ul li.active{
+	color:white;
+}
+#produkter .section-groups p{
+	margin:16px 0;
+	width:285px;
+}
+#produkter .section-groups p.callToAction a{
+	margin-right: 10px;
+}
+.section-groups .hidden{
+	opacity: 0;
+	position: absolute;
+	top:0;
+	z-index:-4;
+	-moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+	-webkit-transition:opacity .4s;
+}
+.section-groups .current{
+	-webkit-animation: slideIn 1s;
+}
+
+#bgImageHolder{
+	background-size:cover;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	display:none;
+}
+
+/* Kontakt */
+#kontakt .content{
+	width: 570px;
+	z-index:1;
+	position: relative;
+}
+#kontakt .content nav{
+	margin:15px 0 30px 0;
+}
+#kontakt .content nav h2{
+	margin-right: 15px;
+}
+#kontakt .content h3{
+	font-size:1em;
+	margin:0;
+	font-weight:500;
+}
+#kontakt .content p{
+	margin-top:0;
+}
+#kontakt .two-column{
+	width:200px;
+	float:left;
+}
+#kontakt .kontakt-form{
+	float:left;
+	width:200px;
+}
+#kontakt form textarea,
+#kontakt form input{
+	background:transparent;
+	border:0;
+	font-family:inherit;
+	font-size:inherit;
+	margin-bottom: .5em;
+	font-style:italic;
+	width:100%;
+}
+::-webkit-input-placeholder {
+    color:#444;
+}
+:-moz-placeholder {
+    color:#444;
+}
+:-ms-input-placeholder {
+    color:#444;
+}
+#kontakt form label{
+	display:block;
+	font-weight:500;
+}
+#kontakt form input[type=submit]{
+	width:auto;
+	display:inline;
+}
+#kontakt form input[type=submit]:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+#kontakt form input:focus,
+#kontakt form textarea:focus{
+	outline:0;
+}
+#timebestilling section{
+	width: 240px;
+	margin-right:30px;
+	float:left;
+}
+#kontakt .section-groups h2{
+	margin: 15px 0;
+}
+#grossister p,
+#presskit p{
+	width: 350px;
+}
+
+/* Image replacement
+————————————————————*/
+.ir,
+h1, h2, header nav a {
+	vertical-align:top;
+	display:inline-block;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+/* Navigation */
+.logo{
+	height:26px;
+	width:148px;
+	background-image:url("../images/text/HeaderLogo.png")
+}
+.oyebryn, .kurs, .produkter, .kontakt{
+	height:26px;
+}
+.oyebryn{
+	width:87px;
+	background-image:url("../images/text/nav-oyebryn.png")	
+}
+.kurs{
+	width:45px;
+	background-image:url("../images/text/nav-kurs.png")	
+}
+.produkter{
+	width:108px;
+	background-image:url("../images/text/nav-produkter.png")	
+}
+.kontakt{
+	width:80px;
+	background-image:url("../images/text/nav-kontakt.png")	
+}
+
+/* Headers */
+#kunster .content h1{
+	width: 270px;
+	height:58px;
+	background-image:url("../images/text/heading-kunstner.png")		
+}
+#oyebryn .content h1{
+	width: 266px;
+	height:79px;
+	background-image:url("../images/text/heading-oyebryn.png")		
+}
+#kurs .content h1{
+	display:block;
+	width: 130px;
+	height:58px;
+	background-image:url("../images/text/heading-kurs.png")		
+}
+#kurs .content .header-hjemmebrukskurs{
+	width: 197px;
+	height:26px;
+	background-image:url("../images/text/kurs-hjemmebrukskurs.png")		
+}
+#kurs .content .header-stylistkurs{
+	width: 109px;
+	height:27px;
+	background-image:url("../images/text/kurs-stylistkurs.png")
+}
+
+/* Produkter */
+#produkter .content > h1{
+	width: 292px;
+	height:58px;
+	background-image:url("../images/text/heading-produkter.png")
+}
+#produkter .content .header-pinsett{
+	width: 71px;
+	height:28px;
+	background-image:url("../images/text/produkter-pinsett.png")		
+}
+#produkter .header-oyeskygge{
+	width: 106px;
+	height:28px;
+	background-image:url("../images/text/produkter-oyeskygge.png")		
+}
+#produkter .active,
+#kontakt .active{
+	background-position: 0 -28px;
+}
+#produkter .heading-ekspertise{
+	width: 364px;
+	height:79px;
+	background-image:url("../images/text/produkter-brukt-av-verdens-beste.png")		
+}
+#produkter .heading-design{
+	width: 307px;
+	height:70px;
+	background-image:url("../images/text/produkter-beste-pinsetten.png")		
+}
+#produkter .heading-kvalitet{
+	width: 192px;
+	height:39px;
+	background-image:url("../images/text/produkter-laget-i-sveits.png")		
+}
+#produkter .heading-anerkjent{
+	width: 252px;
+	height:52px;
+	background-image:url("../images/text/produkter-alle-er-enige.png")		
+}
+
+/* Kontakt */
+#kontakt .content > h1{
+	width: 229px;
+	height:58px;
+	background-image:url("../images/text/heading-kontakt.png")		
+}
+#kontakt .heading-kontakt-fred{
+	width: 126px;
+	height:28px;
+	background-image:url("../images/text/kontakt-kontakt-fred.png")		
+}
+#kontakt .heading-timebestilling{
+	width: 144px;
+	height:28px;
+	background-image:url("../images/text/kontakt-timebestilling.png")		
+}
+#kontakt .heading-grossister{
+	width: 100px;
+	height:28px;
+	background-image:url("../images/text/kontakt-grossister.png")		
+}
+#kontakt .heading-presskit{
+	width: 82px;
+	height:28px;
+	background-image:url("../images/text/kontakt-presskit.png")		
+}
+#kontakt .heading-hos-fred{
+	width: 139px;
+	height:30px;
+	background-image:url("../images/text/heading-hos-fred.png")		
+}
+#kontakt .heading-hamelten-stars{
+	width: 237px;
+	height:30px;
+	background-image:url("../images/text/heading-hamelten-stars.png")		
+}
+#kontakt .heading-kontakt-presskit{
+	width: 342px;
+	height:39px;
+	background-image:url("../images/text/heading-kontakt-presskit.png")		
+}
+#kontakt .heading-kontakt-videresalg{
+	width: 161px;
+	height:39px;
+	background-image:url("../images/text/heading-kontakt-videresalg.png")		
+}
+
+
+/* Reveal content on scroll
+—————————————————————————*/
+body.js .content{
+	opacity:0;
+}
+@-webkit-keyframes slideIn {
+	0%,30%{
+		opacity:0;
+		-webkit-transform: translateX(-30px);
+	}
+	100%{
+		opacity:1;
+		-webkit-transform: translateX(0px);
+	}
+}
+section.beenViewed .content{
+	-webkit-animation: slideIn 2s ease-out;
+  opacity: 1;
+}
+@-webkit-keyframes imageSlideIn {
+	from{
+		background:;
+	}
+	to{
+		opacity:1;
+		-webkit-transform: translateX(0px);
+	}
+}
+
+/* A little responsive
+—————————————————————*/
+@media(max-width:1100px){
+	.content{
+		background:rgba(255,255,255,.5);
+	}
+	#kurs .content{
+		padding-top:125px;
+		width:255px;
+	}
+	#kurs .content section{
+		margin-top:48px;
+		width:100%;
+		float: none !important;
+	}
+}
+@media(max-width:746px){
+	#nav_header{
+		text-align:center;
+	}
+	#nav_header nav h1,
+	#nav_header nav ul{
+		float:none;
+		display:inline-block;
+	}
+	#nav_header nav ul{
+		opacity:0;
+		visibility:hidden;
+		margin-top:5px;
+		-webkit-transition: opacity .4s;
+	}
+	#nav_header:hover nav ul{
+		opacity:1;
+		visibility:visible;
+	}
+}
+
+
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.1),
+only screen and (-moz-min-device-pixel-ratio: 1.1),
+only screen and (-o-min-device-pixel-ratio: 1.1),
+only screen and (min-device-pixel-ratio: 1.1) {
+	/* Navigation */
+	.logo{
+		height:26px;
+		width:148px;
+		background-image:url("../images/text/HeaderLogo@2x.png")
+	}
+	.oyebryn, .kurs, .produkter, .kontakt{
+		height:26px;
+	}
+	.oyebryn{
+		width:87px;
+		background-image:url("../images/text/nav-oyebryn@2x.png")	
+	}
+	.kurs{
+		width:45px;
+		background-image:url("../images/text/nav-kurs@2x.png")	
+	}
+	.produkter{
+		width:108px;
+		background-image:url("../images/text/nav-produkter@2x.png")	
+	}
+	.kontakt{
+		width:80px;
+		background-image:url("../images/text/nav-kontakt@2x.png")	
+	}
+
+	/* Headers */
+	#kunster .content h1{
+		width: 270px;
+		height:58px;
+		background-image:url("../images/text/heading-kunstner@2x.png")		
+	}
+	#oyebryn .content h1{
+		width: 266px;
+		height:79px;
+		background-image:url("../images/text/heading-oyebryn@2x.png")		
+	}
+	#kurs .content h1{
+		width: 130px;
+		height:58px;
+		background-image:url("../images/text/heading-kurs@2x.png")		
+	}
+	#kurs .content .hjemmebrukskurs{
+		width: 197px;
+		height:26px;
+		background-image:url("../images/text/kurs-hjemmebrukskurs@2x.png")		
+	}
+	#kurs .content .stylistkurs{
+		width: 109px;
+		height:27px;
+		background-image:url("../images/text/kurs-stylistkurs@2x.png")		
+	}
+	#produkter .content > h1{
+		width: 292px;
+		height:58px;
+		background-image:url("../images/text/heading-produkter@2x.png")
+	}
+	#produkter .content .header-pinsett{
+		width: 71px;
+		height:28px;
+		background-image:url("../images/text/produkter-pinsett@2x.png")		
+	}
+	#produkter .header-oyeskygge{
+		width: 106px;
+		height:28px;
+		background-image:url("../images/text/produkter-oyeskygge@2x.png")		
+	}
+	#produkter .heading-ekspertise{
+		width: 364px;
+		height:79px;
+		background-image:url("../images/text/produkter-brukt-av-verdens-beste@2x.png")		
+	}
+	#produkter .heading-design{
+		width: 307px;
+		height:70px;
+		background-image:url("../images/text/produkter-beste-pinsetten@2x.png")		
+	}
+	#produkter .heading-kvalitet{
+		width: 192px;
+		height:39px;
+		background-image:url("../images/text/produkter-laget-i-sveits@2x.png")		
+	}
+	#produkter .heading-anerkjent{
+		width: 252px;
+		height:52px;
+		background-image:url("../images/text/produkter-alle-er-enige@2x.png")		
+	}
+
+	/* Kontakt */
+	#kontakt .content > h1{
+		width: 229px;
+		height:58px;
+		background-image:url("../images/text/heading-kontakt@2x.png")		
+	}
+	#kontakt .heading-kontakt-fred{
+		width: 126px;
+		height:28px;
+		background-image:url("../images/text/kontakt-kontakt-fred@2x.png")		
+	}
+	#kontakt .heading-timebestilling{
+		width: 144px;
+		height:28px;
+		background-image:url("../images/text/kontakt-timebestilling@2x.png")		
+	}
+	#kontakt .heading-grossister{
+		width: 100px;
+		height:28px;
+		background-image:url("../images/text/kontakt-grossister@2x.png")		
+	}
+	#kontakt .heading-presskit{
+		width: 82px;
+		height:28px;
+		background-image:url("../images/text/kontakt-presskit@2x.png")		
+	}
+	#kontakt .heading-hos-fred{
+		width: 139px;
+		height:30px;
+		background-image:url("../images/text/heading-hos-fred@2x.png")		
+	}
+	#kontakt .heading-hamelten-stars{
+		width: 237px;
+		height:30px;
+		background-image:url("../images/text/heading-hamelten-stars@2x.png")		
+	}
+	#kontakt .heading-kontakt-presskit{
+		width: 342px;
+		height:39px;
+		background-image:url("../images/text/heading-kontakt-presskit@2x.png")		
+	}
+	#kontakt .heading-kontakt-videresalg{
+		width: 161px;
+		height:39px;
+		background-image:url("../images/text/heading-kontakt-videresalg@2x.png")		
+	}
+}
