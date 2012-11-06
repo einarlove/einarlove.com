@@ -67,7 +67,8 @@ $(function(){
 
   // Center video 
 	$video.bind('loadedmetadata', function(){
-		$video.css("margin-left", -$video.width()/2)
+		$video.css("margin-left", -$video.width()/2);
+		$("#intro .overlay").hide();
 	})
 
 	// Autoscroll down when video ends
@@ -94,7 +95,7 @@ $(function(){
 			.end()
 			.addClass("current").removeClass("hidden");
 
-		if($(this).parent().is("h2")){
+		if($(this).parent().siblings().has("ul").length){
 			$bgHolder.addClass(
 				$("."+id+"-nav").find(".active a").attr("href").substring(1)
 			)
@@ -103,7 +104,6 @@ $(function(){
 			$bgHolder.addClass(id)
 		}
 		bgImage = $bgHolder.css("background-image");
-		console.log(bgImage);
 
 		$bgHolder.fadeIn(1000, function(){
 				$("#produkter").css("background-image",bgImage);
@@ -113,10 +113,26 @@ $(function(){
 
 	})
 
+
+	//  For beta purposes since this is not a finished site
+
 	/* Disable links which does not work yet */
 	$(".beta").on("click", function(e){
 		e.preventDefault();
 		e.stopPropagation()
 	})
+
+	// Preload images
+	$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+	}
+	$([
+		"images/section-4-pinsett-design.jpg",
+		"images/section-4-oyeskygge-kosmetikk.jpg"
+		]).preload();
+
+
 
 })

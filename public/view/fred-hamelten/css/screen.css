@@ -77,8 +77,15 @@ body > section {
 #intro {
 	position: relative;
 	min-height: 600px;
-	/*background-image: url("../images/ForsideFilmStill.jpg");
-	background-position: center center;*/
+}
+#intro .overlay{
+	width: 100%;
+	height:100%;
+	background-image: url("../video/cover-image.jpg");
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
 }
 #kunster {
 	background-image: url("../images/section-1.jpg");
@@ -727,4 +734,13 @@ section.beenViewed .content {
 	/*pointer-events: none;*/
   cursor: default;
   color:gray;
+}
+
+/* If old Internet Explorer */
+.bad-browser{;
+	font-weight:bold;
+	text-align:center;
+}
+.bad-browser a{
+	color: blue;
 }
