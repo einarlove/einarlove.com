@@ -1,11 +1,12 @@
 $(function(){
-	var offset;
-	var $header = $("#nav_header");
-	var $fullScreens = $(".fullscreen");
-	var $video = $("#intro video");
-	var $bgHolder = $("#bgImageHolder");
-	var headerRestPos = $header.offset().top;
-	var sticky = rescale = false;
+	var offset,
+			$header = $("#nav_header"),
+			$fullScreens = $(".fullscreen"),
+			$video = $("#intro video"),
+			$bgHolder = $("#bgImageHolder"),
+			headerRestPos = $header.offset().top,
+			sticky = false,
+			rescale = false;
 
 	// Set section's height to window.height on load
 	recalculate();
@@ -17,7 +18,7 @@ $(function(){
 		duration: 2000,
 		offset : 20
 	});
-	// Make navigation buttons smooth scroll to sections 😌
+	// Make navigation buttons smooth scroll to sections
 	$("#nav_header").localScroll({
 		hash : true,
 		stop : true,
@@ -25,7 +26,7 @@ $(function(){
 	});
 
 
-	// Change section height 👺
+	// Change section height
 	function recalculate(){
 		if (window.innerHeight > 600)
 			$fullScreens.each(function(i,element){
@@ -61,7 +62,7 @@ $(function(){
 	// Hide contents if Javascript is supported and reveal them on scroll
 	$("body").addClass("js")
 	$("#kunster, #oyebryn, #kurs, #produkter, #kontakt").bind('inview', function(event, visible){
-		if (visible == true)
+		if (visible === true)
 			$(this).addClass("beenViewed")
 	})
 
@@ -72,8 +73,8 @@ $(function(){
 	})
 
 	// Autoscroll down when video ends
-	$video.bind("ended",function(e){
-		if(document.body.scrollTop == 0)
+	$video.bind("ended",function(){
+		if(document.body.scrollTop === 0)
 			$(window).scrollTo("#kunster", 2000);
 	})
 	
@@ -95,7 +96,7 @@ $(function(){
 			.end()
 			.addClass("current").removeClass("hidden");
 
-		if($(this).parent().siblings().has("ul").length){
+		if($(this).parent().siblings("ul").length){
 			$bgHolder.addClass(
 				$("."+id+"-nav").find(".active a").attr("href").substring(1)
 			)
