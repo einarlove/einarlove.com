@@ -1,5 +1,5 @@
 %ul.portfolio_items
-	- PortfolioItem.order("created_at DESC").all.each do |item|
+	- PortfolioItem.order("created_at DESC").where(visible: true).each do |item|
 		- if current_page?("/portfolio/"+item.slug)
 			- current_item = "current_item"
 		%li

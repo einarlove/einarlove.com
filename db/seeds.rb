@@ -49,7 +49,7 @@ portfolioItems = PortfolioItem.create([
 I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL+P</code> if you're on windows.",
 		image: "2012-calendar.jpg",
 		links: [["2012 Calendar", "/view/2012calendar.html"]],
-		visible: true
+		visible: false
 	},
 	{
 		title: "Iyengar yoga",
@@ -99,6 +99,15 @@ My group conducted usability evaluation with test users, analysis, design and a 
 		image: "desk.jpg",
 		involvement: ["Information architecture", "Scenario-Based Task Analysis", "Design & implementation"],
 		links: [["Softface Magazine","/view/softface-magazine/index.html"], ["Article: Dieter Rams","/view/softface-magazine/dieter.html"], ["Article: Macintosh","/view/softface-magazine/like-porsche.html"]],
+		video: false,
+		visible: true
+	},
+	{
+		title: "Fred Hamelten",
+		body: "For Fred Hamelten, we created a concept for a site which showcased the premium and professionalism in Fred Hamelten and his products.",
+		image: "fred-hamelten.jpg",
+		involvement: ["research & design direction", "Interaction design & animation", "Front-end development", "Responsive design"],
+		links: [["Our concept","/view/fred-hamelten/"]],
 		video: false,
 		visible: true
 	}
