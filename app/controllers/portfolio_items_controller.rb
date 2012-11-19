@@ -3,7 +3,7 @@ class PortfolioItemsController < ApplicationController
 	before_filter :authorize, except: :show
 
 	def show
-		item = PortfolioItem.find(params[:id]) 
+		item = PortfolioItem.find(params[:id])
 	end
 
 	def new

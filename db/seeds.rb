@@ -49,6 +49,7 @@ portfolioItems = PortfolioItem.create([
 I am using this for <a href='http://lifehacker.com/281626/jerry-seinfelds-productivity-secret'>do not break the chain</a>, and if you want to take use of the calendar, click the heading, edit your preferred title and press <code>⌘+P</code> or <code>CTRL+P</code> if you're on windows.",
 		image: "2012-calendar.jpg",
 		links: [["2012 Calendar", "/view/2012calendar.html"]],
+		href: "/view/2012calendar.html",
 		visible: false
 	},
 	{
@@ -59,6 +60,7 @@ Our main goal was to create an easy accessibly navigation, and stay clear from t
 		image: "iyengar-yoga.jpg",
 		involvement: ["Frontend", "Information architecture"],
 		links: [["Iyengar yoga", "/view/iyengaryoga/"]],
+		href: "/view/iyengaryoga/",
 		visible: true
 	},
 	{
@@ -70,6 +72,7 @@ I was contacted by the chosen designer which needed me to take the work for the 
 		image: "synovedyrkorn.jpg",
 		involvement: ["Frontend", "Image gallery"],
 		links: [["Synøve's homepage", "http://www.sdyrkorn.no"]],
+		href: "http://www.sdyrkorn.no",
 		visible: true
 	},
 	{
@@ -95,10 +98,11 @@ My group conducted usability evaluation with test users, analysis, design and a 
 	},
 	{
 		title: "Softface Magazine",
-		body: "There is a lack of focus on the history of subjects of interaction design and related, so <a href='//torbjornlunde.com/about'>Torbjørn Lunde</a> and I created a concept for a magazine that could fill that spot.",
+		body: "There is a lack of focus on the history of subjects of interaction design and related, so we created a concept for a magazine that could fill that spot.",
 		image: "desk.jpg",
 		involvement: ["Information architecture", "Scenario-Based Task Analysis", "Design & implementation"],
 		links: [["Softface Magazine","/view/softface-magazine/index.html"], ["Article: Dieter Rams","/view/softface-magazine/dieter.html"], ["Article: Macintosh","/view/softface-magazine/like-porsche.html"]],
+		href: "/view/softface-magazine/",
 		video: false,
 		visible: true
 	},
@@ -108,6 +112,7 @@ My group conducted usability evaluation with test users, analysis, design and a 
 		image: "fred-hamelten.jpg",
 		involvement: ["research & design direction", "Interaction design & animation", "Front-end development", "Responsive design"],
 		links: [["Our concept","/view/fred-hamelten/"]],
+		href: "/view/fred-hamelten/",
 		video: false,
 		visible: true
 	}
