@@ -18,13 +18,14 @@
 			%source{src: "/portfolio/videos/"+item.slug+".webm", type: 'video/webm; codecs="vp8, vorbis"', autobuffer: true}
 			= javascript_include_tag "video_controller"
 			%p
-				Your browser does not have video support. Upgrade your browser 
+				Your browser does not have video support. Upgrade your browser
 				%a{href:"http://www.updateyourbrowser.net/en/", target:"_blank"} here.
 		.video_controller
 		.progress_bar
 			.time_bar
 
 - elsif item.image
-	%img.two_columns{src: "/portfolio/images/"+item.slug+".jpg"}
+	%a.two_columns{href: item.href}
+		%img{src: "/portfolio/images/"+item.slug+".jpg"}
 
 = render "pages/portfolio"
