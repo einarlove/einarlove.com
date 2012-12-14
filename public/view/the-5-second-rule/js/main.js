@@ -40,10 +40,11 @@ document.addEventListener("DOMContentLoaded", function(){
 	game.spawnBug = function(){
 		randomX = randomFromTo(70, ctx.canvas.width-60);
 		randomS = randomFromTo(5, 20) / 100;
-		if(game.playable)
+		if(game.playable){
 			bugs.unshift(new Bug(sprites.bug1, randomX, 250, randomS ))
+			setTimeout(game.spawnBug, game.spawnInterval);
+		}
 	}
-
 
 	// Make king's hit animation on click
 	canvas.addEventListener("click", function(){
@@ -108,9 +109,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	// show only canvas for testing purposes
 	if(window.location.hash === "#onlyCanvas"){
 		document.querySelector(".game").classList.add("show");
-		game.draw();
-		game.countDown(game.timer);
-		setInterval(game.spawnBug, 2000)
+		game.start();
 	}
 	else{
 		// Start intro animation

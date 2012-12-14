@@ -1,5 +1,6 @@
 Game = function(){
 	this.playable = true;
+	this.spawnInterval = 2000;
 	this.won = function(){
 		game.playable = false;
 		king.playable = false;
@@ -21,6 +22,13 @@ Game = function(){
 				game.won()
 			else if(game.playable)
 				game.timer--;
+
+			if(game.timer == 40)
+				game.spawnInterval = 1700;
+			if(game.timer == 30)
+				game.spawnInterval = 1500;
+			if(game.timer == 15)
+				game.spawnInterval = 1300;
 		}, 1000)
 	}
 	this.start = function(){
@@ -29,7 +37,7 @@ Game = function(){
 			document.querySelector(".game").classList.add("show");
 			game.draw();
 			game.countDown();
-			setInterval(game.spawnBug, 2000)
+			game.spawnBug();
 			_gaq.push(['_trackEvent', 'Game', 'Started']);
 		}, 1000 * 6);
 	}
