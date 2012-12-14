@@ -1,0 +1,76 @@
+<head>
+	<meta charset="utf-8">
+	<title>The 5 second rule!</title>
+	<meta name="description" property="og:description" content="If you drop food on the ground, you can pick it up within 5 seconds if you're fast enough. But is it true?">
+	<meta property="og:title" content="The 5 second rule - Play the game">
+	<meta name="og:site_name" content="einarlove.com">
+	<script src="js/sprites.js"></script>
+	<script src="js/helpers.js"></script>
+	<script src="js/king.js"></script>
+	<script src="js/bug.js"></script>
+	<script src="js/game.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/lib/prefixfree.min.js"></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=510652435634391";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<header>
+		<h2>The fameous</h2>
+		<h1>5 second rule!</h1>
+	</header>
+	<div class="intro">
+		<div class="king"></div>
+		<div class="pizza"></div>
+		<div class="bottom_bugs"></div>
+		<div class="top_bugs"></div>
+		<div class="bugs_bubble"></div>
+		<div class="king_bubble"></div>
+	</div>
+	<div class="game_menu">
+		<p>Be the king, save the pizza, and uphold the 5 second rule!</p>
+		<button id="start_game">Start game</button>
+	</div>
+	<div class="sorry-message">
+		<p>Sorry, but this game is not supported for your browser. This project was meant to test new technologies, and I have not been able to support all devices and browsers at this moment.</p>
+		<p>If you would like to test the game, download <a target="_blank" href="https://www.google.com/intl/en/chrome/browser/" title="Download Chrome browser">Google Chrome</a> or open it in your Safari browser.</p>
+	 	<p>The main message is that researchers have found that bacteria will cling to food immediately. <a target="_blank" href="http://science.howstuffworks.com/science-vs-myth/everyday-myths/five-second-rule.htm">It's just a made up myth!</a></p>
+		<p>Watch <a target="_blank" href="http://youtu.be/rYXdsOEWBj0" title="Video about the 5 second rule">Vsauce's video</a> to get more info and watch him debunk the myth.</p>
+	</div>
+	<div class="psst">
+		<p>Psst! <b>5 seconds</b> is <b>1 minute</b> in bacteria world.</p>
+		<p>Good luck!</p>
+	</div>
+	<div class="game">
+		<canvas id="mainCanvas" height=650 width=850></canvas>
+		<div class="overlay">
+			<div class="message">
+				<h1 class="you_won">You Won!</h1>
+				<h2 class="you_won">You protected the pizza for a whole bacteria minute</h2>
+				<h1 class="you_lost">You lost!</h1>
+				<h2 class="you_lost">The bacterias reached the pizza before the time</h2>
+				<p>But actually, researchers have found that bacteria will cling to food immediately. <a target="_blank" href="http://science.howstuffworks.com/science-vs-myth/everyday-myths/five-second-rule.htm">It's just a made up myth!</a></p>
+				<p>Watch <a target="_blank" href="http://youtu.be/rYXdsOEWBj0" title="Video about the 5 second rule">Vsauce's video</a> to get more info and watch him debunk the myth.</p>
+				<p class="you_lost">Or do you want to <a href="index.html#onlyCanvas" title="Try again">retry?</a></p>
+				<div class="social">
+					<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-action="recommend"></div>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-hashtags="5secondRule" data-dnt="true">Tweet</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<small>A game by <a href="//einarlove.com" title="Einar Löve's homepage">Einar Love</a></small>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+
+
+<!-- // <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
