@@ -382,15 +382,15 @@ body.start_game .game_menu{
 /* Social buttons
 ———————————————————————————————————————————*/
 .social{
-	width: 240px;
+	text-align:center;
 	margin: 0 auto;
 }
 .social .fb-like,
 .social .twitter-share-button{
-	-webkit-filter: sepia(100%);
+	-webkit-filter: sepia(100%) saturate(0.4);
 	display: inline-block;
 	vertical-align: top;
-	opacity: .8;
+	opacity: .5;
 }
 .social .fb-like:hover,
 .social .twitter-share-button:hover{

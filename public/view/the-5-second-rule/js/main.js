@@ -116,11 +116,11 @@ document.addEventListener("DOMContentLoaded", function(){
 		// Start intro animation
 		window.onload = function(){
 			document.querySelector(".intro").classList.add("animate");
+			// Wait 9 seconds and then show game menu
+			setTimeout(function(){
+				document.body.classList.add("show_game_menu");
+			},1000 * 11)
 		}
-		// Wait 9 seconds and then show game menu
-		setTimeout(function(){
-			document.body.classList.add("show_game_menu");
-		},1000 * 11)
 	}
 
 	if(!browserIsSupported()){
