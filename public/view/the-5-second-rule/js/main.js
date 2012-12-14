@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		game = new Game();
 		canvas = getCanvas("#mainCanvas");
 		ctx    = canvas.ctx;
-		game.timer = 3;
+		game.timer = 60;
 
 		mousePos = {x:canvas.width/2,y:canvas.height/2};
 
@@ -125,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	if(!browserIsSupported()){
 		document.body.classList.add("browser-not-supported");
+		_gaq.push(['_trackEvent', 'Browser', 'Not supported']);
 	}
 
 	document.querySelector("#start_game").addEventListener("click",game.start);

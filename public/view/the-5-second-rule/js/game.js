@@ -6,12 +6,14 @@ Game = function(){
 		king.gotoAndPlay("start_cheer");
 		document.querySelector(".game").classList.add("won");
 		blurOrFade(canvas);
+		_gaq.push(['_trackEvent', 'Game', 'Won']);
 	}
 	this.lost = function(){
 		game.playable = false;
 		king.gotoAndPlay("stand");
 		document.querySelector(".game").classList.add("lost");
 		blurOrFade(canvas);
+		_gaq.push(['_trackEvent', 'Game', 'Lost']);
 	}
 	this.countDown = function(){
 		setInterval(function(){
@@ -28,6 +30,7 @@ Game = function(){
 			game.draw();
 			game.countDown();
 			setInterval(game.spawnBug, 2000)
+			_gaq.push(['_trackEvent', 'Game', 'Started']);
 		}, 1000 * 6);
 	}
 	this.displayTimer = function(x, y, size){
