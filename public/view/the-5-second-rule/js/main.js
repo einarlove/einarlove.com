@@ -40,8 +40,9 @@ document.addEventListener("DOMContentLoaded", function(){
 	game.spawnBug = function(){
 		randomX = randomFromTo(70, ctx.canvas.width-60);
 		randomS = randomFromTo(5, 20) / 100;
+		randomBug = [sprites.bug1, sprites.bug2, sprites.bug3][randomFromTo(0,2)]
 		if(game.playable){
-			bugs.unshift(new Bug(sprites.bug1, randomX, 250, randomS ))
+			bugs.unshift(new Bug(randomBug, randomX, 250, 0.1 ))
 			setTimeout(game.spawnBug, game.spawnInterval);
 		}
 	}
@@ -61,12 +62,15 @@ document.addEventListener("DOMContentLoaded", function(){
 
 		if(bug.y >= 550-bug.height && !bug.dying && game.playable){
 			bug.won = true;
+			bug.gotoAndPlay("jump");
 			game.lost();
 		}
 		else if(!bug.dying && !bug.won && game.playable){
 			bug.progress += 0.001;
-			bug.y = (450 * bug.progress/2) + 200;
-			var newSize = bug.progress*2 + 0.2;
+			// bug.y = (450 * bug.progress/2) + 200;
+			bug.y = linear(0, bug.y, 0, 450, bug.progress / 70).y;
+			// var newSize = bug.progress*2 + 0.2;
+			var newSize = linear(0, bug.size, 0, 1.3, bug.progress / 70).y;
 			bug.changeSize( newSize );
 			if(bug.isBeyondKing)
 				bug.x = linear(bug.x, 0, 400, 0, 0.005).x;
@@ -124,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	if(!browserIsSupported()){
 		document.body.classList.add("browser-not-supported");
-		_gaq.push(['_trackEvent', 'Browser', 'Not supported']);
+		if(tracking) _gaq.push(['_trackEvent', 'Browser', 'Not supported']);
 	}
 
 	document.querySelector("#start_game").addEventListener("click",game.start);

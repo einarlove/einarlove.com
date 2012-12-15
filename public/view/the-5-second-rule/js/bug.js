@@ -39,6 +39,8 @@ function Bug(sprite, x, y, size){
 			}
 			else if(this.label === "die")
 				this.gotoAndPlay("fadeAway");
+			else if(this.label === "jump")
+				this.gotoAndPlay("jump");
 			else
 				this.playhead = this.animation.start;
 		}

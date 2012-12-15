@@ -5,16 +5,22 @@ Game = function(){
 		game.playable = false;
 		king.playable = false;
 		king.gotoAndPlay("start_cheer");
-		document.querySelector(".game").classList.add("won");
-		blurOrFade(canvas);
-		_gaq.push(['_trackEvent', 'Game', 'Won']);
+		// Wait 1 second and display overlay
+		setTimeout(function(){
+			document.querySelector(".game").classList.add("won");
+			blurOrFade(canvas);
+		},1000);
+		if(tracking) _gaq.push(['_trackEvent', 'Game', 'Won']);
 	}
 	this.lost = function(){
 		game.playable = false;
 		king.gotoAndPlay("stand");
-		document.querySelector(".game").classList.add("lost");
-		blurOrFade(canvas);
-		_gaq.push(['_trackEvent', 'Game', 'Lost']);
+		// Wait 1 second and display overlay
+		setTimeout(function(){
+			document.querySelector(".game").classList.add("lost");
+			blurOrFade(canvas);
+		},1000);
+		if(tracking) _gaq.push(['_trackEvent', 'Game', 'Lost']);
 	}
 	this.countDown = function(){
 		setInterval(function(){
@@ -38,7 +44,7 @@ Game = function(){
 			game.draw();
 			game.countDown();
 			game.spawnBug();
-			_gaq.push(['_trackEvent', 'Game', 'Started']);
+			if(tracking) _gaq.push(['_trackEvent', 'Game', 'Started']);
 		}, 1000 * 6);
 	}
 	this.displayTimer = function(x, y, size){

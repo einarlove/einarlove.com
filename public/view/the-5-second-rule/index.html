@@ -71,7 +71,10 @@
 	</div>
 
 	<script type="text/javascript">
-		if(window.location.host != "the-5-second-rule.dev"){
+	// Don't track if local or testing purposes
+		if(window.location.host != "the-5-second-rule.dev"
+				|| window.location.hash === "#untrack"){
+			var tracking = true;
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-37067612-1']);
 		  _gaq.push(['_trackPageview']);
