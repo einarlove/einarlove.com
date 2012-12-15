@@ -61,7 +61,7 @@ Our main goal was to create an easy accessibly navigation, and stay clear from t
 		involvement: ["Frontend", "Information architecture"],
 		links: [["Iyengar yoga", "/view/iyengaryoga/"]],
 		href: "/view/iyengaryoga/",
-		visible: true
+		visible: false
 	},
 	{
 		title: "Synøve Dyrkorn",
@@ -113,6 +113,16 @@ My group conducted usability evaluation with test users, analysis, design and a 
 		involvement: ["research & design direction", "Interaction design & animation", "Front-end development", "Responsive design"],
 		links: [["Our concept","/view/fred-hamelten/"]],
 		href: "/view/fred-hamelten/",
+		video: false,
+		visible: true
+	},
+	{
+		title: "The 5 second rule",
+		body: "In a project to learn HTML5 Canvas and further educate myself in javascript, I created a campaign around the awareness about bacterias on food dropped on the floor.",
+		image: "fred-hamelten.jpg",
+		involvement: ["Concept", "Sprite animations", "Front-end development", "Art direction"],
+		links: [["The campaign","/view/the-5-second-rule/"], ["The inspiration", "http://imgur.com/gallery/nmGYR"]],
+		href: "/view/the-5-second-rule/",
 		video: false,
 		visible: true
 	}
