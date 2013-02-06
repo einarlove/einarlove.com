@@ -1,0 +1,7 @@
+spritesheets.cloud = {
+
+	"file": "sprites/cloud.png",
+
+	"width": 72,
+	"height": 35
+}

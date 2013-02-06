@@ -1,0 +1,13 @@
+spritesheets.water = {
+
+	"file": "sprites/water.png",
+
+	"width": 414,
+	"height": 201,
+
+	"hitbox":{
+		"y": 20
+	},
+
+	"repeat": "repeat-x"
+}
