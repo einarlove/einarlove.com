@@ -1,0 +1,62 @@
+body{
+	margin:0;
+	background-image: -webkit-linear-gradient(top, #444, #333);
+	font-family: "Helvetica Neue", Helvetica, san-serif;
+}
+.wrapper{
+	margin:50px auto;
+	width: 600px;
+	position: relative;
+}
+.overlay{
+	position: absolute;
+	top:0; right:0; bottom:0; left:0;
+	background: url("gfx/overlay_bg.png")
+}
+
+.hidden{
+	display: none;
+}
+
+.fadeOut{
+	transition: 0.2s;
+	opacity:0;
+	pointer-events: none;
+}
+
+#play_btn{
+	border:0;
+	padding:0;
+	width: 165px;
+	height: 75px;
+
+	margin-top: 300px;
+	margin-left: 210px;
+
+	background: url("gfx/play.png");
+	font-size: 0;
+	cursor: pointer;
+
+	opacity: 0.8;
+
+}
+#play_btn:hover{
+	opacity: 1
+}
+
+#play_btn.disabled{
+	opacity: 0.4;
+	cursor: pointer;
+	pointer-events: none;
+}
+
+#myCanvas{
+	display:block;
+	background:white;
+	box-shadow: 0px 0px 6px #000;
+	image-rendering: optimizeSpeed;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: optimize-contrast;
+	-ms-interpolation-mode: nearest-neighbor;
+}

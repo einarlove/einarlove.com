@@ -1,0 +1,11 @@
+spritesheets.vertical_grass = {
+
+	"file": "sprites/vertical_grass.png",
+
+	"width": 70,
+	"height": 286,
+
+	"repeat": "repeat-y",
+
+
+}

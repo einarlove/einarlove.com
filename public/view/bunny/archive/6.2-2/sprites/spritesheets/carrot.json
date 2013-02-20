@@ -1,0 +1,9 @@
+spritesheets.carrot = {
+
+	"file": "sprites/carrot.png",
+
+	"width": 37,
+	"height": 49,
+
+	"animations" : false
+}

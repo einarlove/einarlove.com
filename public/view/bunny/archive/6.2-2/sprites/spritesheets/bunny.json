@@ -1,0 +1,63 @@
+spritesheets.bunny = {
+
+	"file": "sprites/bunny.png",
+
+	"width": 70,
+	"height": 70,
+
+	"animationDefault" : "stand_still",
+
+	"animations" : {
+		"stand_still": {
+
+			"start": 0,
+			"end": 0,
+
+			"hitbox": {
+				"x": 16,
+				"y": 25,
+				"width": 30,
+				"height": 40
+			}
+		},
+
+		"run": {
+
+			"start": 1,
+			"end": 1,
+
+			"hitbox": {
+				"x": 22,
+				"y": 25,
+				"width": 30,
+				"height": 40
+			}
+		},
+
+		"hang_on_wall": {
+
+			"start": 2,
+			"end": 2,
+
+			"hitbox": {
+				"x": 16,
+				"y": 35,
+				"width": 30,
+				"height": 30
+			}
+		},
+
+		"land_on_ground": {
+
+			"start": 3,
+			"end": 3,
+
+			"hitbox": {
+				"x": 21,
+				"y": 25,
+				"width": 30,
+				"height": 40
+			}
+		},
+	}
+}

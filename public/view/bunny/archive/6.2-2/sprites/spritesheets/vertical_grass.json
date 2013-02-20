@@ -1,0 +1,17 @@
+spritesheets.vertical_grass = {
+
+	"file": "sprites/vertical_grass.png",
+
+	"width": 60,
+	"height": 1000,
+
+	"repeat": "repeat-y",
+
+	"hitbox" : {
+		"x": 24,
+		"y": 0,
+		"width": 19
+	}
+
+
+}

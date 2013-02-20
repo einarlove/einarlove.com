@@ -1,0 +1,1328 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"html",
+				"html	html"
+			],
+			[
+				"ajax",
+				"ajax	Google AJAX Libraries: jQuery"
+			],
+			[
+				"img",
+				"img	Image - Placeholder"
+			],
+			[
+				"input",
+				"input	input - range"
+			],
+			[
+				"ul",
+				"ul	ul - Placeholder"
+			],
+			[
+				"link",
+				"link	link - stylesheet"
+			],
+			[
+				"form",
+				"form	<form>"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"c",
+				"command	<command>"
+			],
+			[
+				"e",
+				"embed	<embed>"
+			],
+			[
+				"b",
+				"bm-	Benchmark.bmbm do .. end"
+			],
+			[
+				"cu",
+				"current_file"
+			],
+			[
+				"curr",
+				"current_line"
+			],
+			[
+				"current",
+				"current_line"
+			],
+			[
+				"print_a",
+				"print_a_line"
+			],
+			[
+				"ex",
+				"extension"
+			],
+			[
+				"t",
+				"tfoot	<tfoot>"
+			],
+			[
+				"tabb",
+				"tabby_cat"
+			],
+			[
+				"joke",
+				"joke_evaluation"
+			],
+			[
+				"my",
+				"my_teeth"
+			],
+			[
+				"cars",
+				"cars_not_drivven"
+			],
+			[
+				"lorem",
+				"lorem	lorem - Medium paragraph"
+			],
+			[
+				"prop",
+				"property"
+			],
+			[
+				"font",
+				"font	font-family: family"
+			],
+			[
+				"scroll",
+				"scrollLeft"
+			],
+			[
+				"table",
+				"table	table - Placeholder"
+			],
+			[
+				"Studen",
+				"StudentView"
+			],
+			[
+				"render",
+				"renderStudent"
+			],
+			[
+				"video",
+				"video	<video>"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"sl",
+				"sliderImage"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"di",
+				"displayedImage"
+			],
+			[
+				"le",
+				"length-1"
+			],
+			[
+				"sli",
+				"sliderImage"
+			],
+			[
+				"back",
+				"background	background: color image repeat attachment position"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"bac",
+				"background	background: color image repeat attachment position"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "js/Game.js",
+			"settings":
+			{
+				"buffer_size": 967,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/main.js",
+			"settings":
+			{
+				"buffer_size": 1171,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/Chrome.sublime-build",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reine",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"disoce",
+				"Package Control: Discover Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Wrap Selection in Open/Close Tag"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"style",
+				"Snippet: link - stylesheet"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"live",
+				"Snippet: livereload"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rails",
+				"Snippet: Create functional test class"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ren",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"doctype",
+				"Snippet: DOCTYPE HTML"
+			],
+			[
+				"renin",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"conve",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"lint",
+				"SublimeLinter: Save-Only Linting"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"lorem",
+				"Snippet: lorem - Medium paragraph"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"fetc",
+				"Fetch: Package"
+			],
+			[
+				"css",
+				"Sort via CSScomb"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"placeholder",
+				"Snippet: Image - Placeholder"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"e",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"hint",
+				"JSHint"
+			],
+			[
+				"im",
+				"Snippet: Image - Placeholder"
+			],
+			[
+				"ma",
+				"Markdown Preview: current file in browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: current file in browser"
+			]
+		],
+		"width": 571.0
+	},
+	"console":
+	{
+		"height": 148.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/einarlove/Sites/canvas/bunny/js/detectCollision.js",
+		"/Users/einarlove/Sites/einarlove/public/view/the-5-second-rule/js/king.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/main.js",
+		"/Users/einarlove/Sites/canvas/bunny/sprites/spritesheets/bunny.json",
+		"/Users/einarlove/Sites/canvas/bunny/js/Bunny.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Sprite.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Obstacle.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/helpers.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Game.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/lib/include.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Level.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/sprite.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/levels/two.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/levels/one.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Camera.js",
+		"/Users/einarlove/Dropbox/Apps/Sublime/Packages/User/Chrome.sublime-build",
+		"/Users/einarlove/Sites/canvas/bunny/style.css",
+		"/Users/einarlove/Sites/canvas/Camera (Christoffer)/assets/js/stardust.v2.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/events.js",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/einarlove/Sites/canvas/bunny/index.html",
+		"/Users/einarlove/Sites/canvas/bunny/js/levels/level_one.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/levels/level_one.json",
+		"/Users/einarlove/Sites/canvas/sinus/pelican.js",
+		"/Users/einarlove/Sites/canvas/bunny/bunny.sublime-project",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/game.js",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Settings/SideBarEnhancements.json",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/helpers.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Bunny2.js",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/main.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/helpers",
+		"/Users/einarlove/Sites/canvas/sinus/style.css",
+		"/Users/einarlove/Sites/canvas/sinus/index.html",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Packages/index.html",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Settings/Session.sublime_session",
+		"/Applications/Utilities/Terminal.app/Contents/info.plist",
+		"/Users/einarlove/Sites/NXT-Portal/Gemfile",
+		"/Users/einarlove/.zshrc",
+		"/Users/einarlove/.bashrc",
+		"/Users/einarlove/.bash_profile",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/infoboxes_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/config/routes.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/projects/index.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/projects/show.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/application_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/customers/show.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/infoboxes/new.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/helpers/application_helper.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/projects_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/infobox_templates_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/application/index.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/helpers/projects_helper.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/helpers/customers_helper.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/customers_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/projects/new.html.erb",
+		"/Users/einarlove/Dropbox/NXT/webbar/site/prosjekt.html",
+		"/Users/einarlove/Desktop/Camera/assets/js/main.js",
+		"/Users/einarlove/Desktop/Camera/assets/js/lib.vector.js",
+		"/Users/einarlove/Desktop/Camera/assets/js/stardust.v2.js",
+		"/Users/einarlove/Desktop/Camera/lib.platformer.v3.js",
+		"/Users/einarlove/Sites/nkftimeplan/public/blue_tit.js",
+		"/Users/einarlove/Sites/nkftimeplan/views/show.haml",
+		"/Users/einarlove/Sites/nkftimeplan/public/style.css",
+		"/Users/einarlove/Sites/nkftimeplan/index.rb",
+		"/Users/einarlove/Dropbox/Journal.dayone/entries/CE2C8838D6F044388FD69B6E694CC952.doentry",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/infoboxes/templates.erb",
+		"/Users/einarlove/Sites/NXT-Portal/Gemfile.lock",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/users_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/customer.rb",
+		"/Users/einarlove/Sites/NXT-Portal/db/seeds.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/layouts/application.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/customers/index.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/project.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/infobox.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/infobox_template_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/user.rb",
+		"/Users/einarlove/Sites/einarlove/db/seeds.rb",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/index.html",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/king.js",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/bug.js",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/new_sprites.js",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/bug3.json",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/bug2.json",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/bug1.json",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/sprites.js",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/css/style.css",
+		"/Users/einarlove/Sites/bacteria/The 5 second rule/js/lib/prefixfree.min.js",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/einarlove/Desktop/Refleksjon - Semester 3.html",
+		"/Users/einarlove/Desktop/presentasjon/index.html",
+		"/Users/einarlove/Desktop/presentasjon/theKingGuardian/css/style.css",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/king.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/sprites.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/game.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/main.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/index.html",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/css/style.css",
+		"/Users/einarlove/Desktop/Des 8 1pm/js/king.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/bug.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/helpers.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/just-canvas.html",
+		"/Users/einarlove/Sites/einarlove/public/view/fred-hamelten/css/screen.css",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/js/require.js",
+		"/Users/einarlove/Sites/bacteria/timeline/main.js",
+		"/Users/einarlove/Sites/bacteria/timeline/sprites.js",
+		"/Users/einarlove/Sites/bacteria/timeline/king.js",
+		"/Users/einarlove/Sites/bacteria/timeline/king.json",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/application/_header.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/infoboxes/update.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/infoboxes/edit.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/config/application.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/properties_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/controllers/sessions_controller.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/property.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/models/infobox_template.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/users/index.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/customers/new.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/db/migrate/20121206140951_create_infobox_templates.rb",
+		"/Users/einarlove/Sites/NXT-Portal/app/views/infoboxes/destroy.html.erb",
+		"/Users/einarlove/Sites/NXT-Portal/db/migrate/20121206122857_create_infoboxes.rb",
+		"/Users/einarlove/Sites/bacteria/timeline/index.html",
+		"/private/var/folders/rt/h49fnmcj0cl3hhfvm4dknj1c0000gn/T/6caab75d-b5c3-4831-b818-67a49bea70fe/ftpsdyrkorn.no/malerier/2009.html",
+		"/private/var/folders/rt/h49fnmcj0cl3hhfvm4dknj1c0000gn/T/6caab75d-b5c3-4831-b818-67a49bea70fe/ftpsdyrkorn.no/malerier/2010.html",
+		"/private/var/folders/rt/h49fnmcj0cl3hhfvm4dknj1c0000gn/T/6caab75d-b5c3-4831-b818-67a49bea70fe/ftpsdyrkorn.no/malerier/2011.html",
+		"/private/var/folders/rt/h49fnmcj0cl3hhfvm4dknj1c0000gn/T/6caab75d-b5c3-4831-b818-67a49bea70fe/ftpsdyrkorn.no/malerier/2012.html",
+		"/private/var/folders/rt/h49fnmcj0cl3hhfvm4dknj1c0000gn/T/6caab75d-b5c3-4831-b818-67a49bea70fe/ftpsdyrkorn.no/js/slideshow.js",
+		"/Users/einarlove/Sites/bacteria/theKingGuardian/main.js",
+		"/Users/einarlove/Library/Application Support/Sublime Text 2/Packages/User/SublimeLinter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			"/Users/einarlove/Sites/einarlove",
+			"einarlove"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hitbox",
+			"start",
+			"hitbox",
+			"y",
+			"hitbox",
+			"3",
+			"1",
+			"hitbox",
+			"this.spritesheet",
+			"hitbox",
+			"x",
+			"log",
+			"this.flip",
+			"frames[this.flooredPH]",
+			"this",
+			"sprite",
+			"\",",
+			"[folder]",
+			"qeue",
+			"width",
+			"160",
+			"thisLevel",
+			"speed",
+			"this.speed.y",
+			"this.speed",
+			"SPEED",
+			"speed",
+			"forEach",
+			"bunny",
+			"log",
+			"2",
+			"image",
+			"Stop if outside",
+			"this.zoom",
+			"width",
+			"x",
+			"destination",
+			"this",
+			"scale",
+			"position",
+			"x",
+			"function ",
+			"	},\n",
+			"},",
+			" : function",
+			"forEach",
+			"bunny",
+			"this.MAX_SPEED",
+			"this.ACCELERATION",
+			"this.hanging.direction",
+			"yy",
+			"xx",
+			"// ",
+			"1.2",
+			"speed",
+			"SPEED",
+			"speed",
+			"SPEED",
+			"speed",
+			"SPEED",
+			"speed",
+			"destination",
+			"MAX_SPEED",
+			"5",
+			"/",
+			"bunny",
+			"140",
+			"onWall",
+			"whenInAir",
+			"onSolid",
+			"b",
+			"var",
+			"o",
+			"var",
+			"bunny.y",
+			"bunny.x",
+			"console.log",
+			"yb",
+			"xr",
+			"obstacle",
+			"o.obstacle",
+			"var",
+			"log",
+			"cornerCollsion",
+			"cornerCollision",
+			"//",
+			"130",
+			"log",
+			"obstacle",
+			"x",
+			"this.graphic",
+			"carrot",
+			".obstacles",
+			"obstacles",
+			"Floating",
+			"x:",
+			"new Obstacle({",
+			"// ",
+			"	})\n)",
+			"game.thisLevel.obstacles.push(",
+			"	{",
+			":",
+			"new Obstacle({",
+			"	})\n)",
+			"game.thisLevel.obstacles.push(",
+			"70",
+			".x",
+			"mousePos",
+			"that",
+			"obstacle",
+			"(o",
+			"resetProperties",
+			"checkTouching",
+			"direction",
+			"log",
+			"!touching.obstacle",
+			"touching",
+			"left",
+			"bunny.closeTo = obstacle;",
+			"obstacle.direction",
+			"obstacle",
+			"strokeRect",
+			"fillRect",
+			"fillStyle",
+			"y",
+			"x",
+			"zIndex",
+			"type"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"_",
+			"-",
+			"_",
+			"slug:RKL 2",
+			":",
+			"assets/",
+			"blog/",
+			"assets/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "js/Game.js",
+					"settings":
+					{
+						"buffer_size": 967,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/main.js",
+					"settings":
+					{
+						"buffer_size": 1171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								766,
+								749
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 454.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"bunny/js/main.js"
+			],
+			[
+				"game",
+				"bunny/js/Game.js"
+			],
+			[
+				"col",
+				"bunny/js/detectCollision.js"
+			],
+			[
+				"o",
+				"bunny/js/Obstacle.js"
+			],
+			[
+				"inc",
+				"bunny/js/lib/include.js"
+			],
+			[
+				"helper",
+				"bunny/js/helpers.js"
+			],
+			[
+				"obs",
+				"js/Obstacle.js"
+			],
+			[
+				"two",
+				"js/levels/two.js"
+			],
+			[
+				"ob",
+				"js/Obstacle.js"
+			],
+			[
+				"one",
+				"js/levels/one.js"
+			],
+			[
+				"dete",
+				"js/detectCollision.js"
+			],
+			[
+				"level",
+				"js/Level.js"
+			],
+			[
+				"style",
+				"style.css"
+			],
+			[
+				"det",
+				"js/detectCollision.js"
+			],
+			[
+				"leve",
+				"js/Level.js"
+			],
+			[
+				"coll",
+				"js/detectCollision.js"
+			],
+			[
+				"eve",
+				"js/events.js"
+			],
+			[
+				"to",
+				"js/levels/two.js"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"gam",
+				"js/Game.js"
+			],
+			[
+				"even",
+				"js/events.js"
+			],
+			[
+				"bunny",
+				"js/Bunny.js"
+			],
+			[
+				"help",
+				"js/helpers.js"
+			],
+			[
+				"ma",
+				"js/main.js"
+			],
+			[
+				"ev",
+				"bunny/js/events.js"
+			],
+			[
+				"incl",
+				"bunny/js/lib/include.js"
+			],
+			[
+				"index",
+				"bunny/index.html"
+			],
+			[
+				"event",
+				"bunny/js/events.js"
+			],
+			[
+				"in",
+				"bunny/js/lib/include.js"
+			],
+			[
+				"ga",
+				"js/game.js"
+			],
+			[
+				"king",
+				"js/king.js"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"controller",
+				"app/controllers/infoboxes_controller.rb"
+			],
+			[
+				"info",
+				"app/controllers/infoboxes_controller.rb"
+			],
+			[
+				"all",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"templ",
+				"app/controllers/infobox_templates_controller.rb"
+			],
+			[
+				"appl",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"inf",
+				"app/controllers/infoboxes_controller.rb"
+			],
+			[
+				"project",
+				"app/helpers/projects_helper.rb"
+			],
+			[
+				"infobox",
+				"app/controllers/infoboxes_controller.rb"
+			],
+			[
+				"show",
+				"app/views/projects/show.html.erb"
+			],
+			[
+				"customer",
+				"app/helpers/customers_helper.rb"
+			],
+			[
+				"new",
+				"app/views/infoboxes/new.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"ne",
+				"app/views/projects/new.html.erb"
+			],
+			[
+				"projects",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"geml",
+				"Gemfile.lock"
+			],
+			[
+				"controleler",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"template",
+				"app/controllers/infobox_templates_controller.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"views",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"temp",
+				"app/controllers/infobox_templates_controller.rb"
+			],
+			[
+				"projex",
+				"app/views/projects/index.html.erb"
+			],
+			[
+				"model",
+				"app/models/project.rb"
+			],
+			[
+				"bug",
+				"js/bug.js"
+			],
+			[
+				"cs",
+				"css/style.css"
+			],
+			[
+				"just",
+				"just-canvas.html"
+			],
+			[
+				"sprite",
+				"js/sprites.js"
+			],
+			[
+				"spr",
+				"js/sprites.js"
+			],
+			[
+				"_h",
+				"app/views/application/_header.erb"
+			],
+			[
+				"layout",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"app",
+				"config/application.rb"
+			],
+			[
+				"projec",
+				"app/controllers/projects_controller.rb"
+			],
+			[
+				"proper",
+				"app/controllers/properties_controller.rb"
+			],
+			[
+				"_",
+				"app/views/application/_header.erb"
+			],
+			[
+				"templates",
+				"db/migrate/20121206140951_create_infobox_templates.rb"
+			],
+			[
+				"ap",
+				"config/application.rb"
+			],
+			[
+				"application",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"session",
+				"app/controllers/sessions_controller.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"idex",
+				"app/views/projects/idex.html.erb"
+			],
+			[
+				"gemfile",
+				"NXT-Portal/Gemfile"
+			],
+			[
+				"constroller",
+				"app/controllers/customers_controller.rb"
+			],
+			[
+				"customers",
+				"app/controllers/customers_controller.rb"
+			],
+			[
+				"first",
+				"db/migrate/20121130100108_addfirst_name_to_users.rb"
+			],
+			[
+				"css",
+				"css/screen.css"
+			],
+			[
+				"",
+				"$$$$/application_controller.rb"
+			],
+			[
+				"lay",
+				"app/views/layouts/admin.haml"
+			],
+			[
+				"port",
+				"app/models/portfolio_item.rb"
+			],
+			[
+				"portfolio",
+				"app/controllers/portfolio_items_controller.rb"
+			],
+			[
+				"html",
+				"public/500.html"
+			],
+			[
+				"admin",
+				"app/controllers/admin_controller.rb"
+			],
+			[
+				"porto",
+				"app/views/pages/_portfolio.haml"
+			],
+			[
+				"artic",
+				"app/models/article.rb"
+			],
+			[
+				"portf",
+				"app/models/portfolio_item.rb"
+			],
+			[
+				"por",
+				"app/views/portfolio_items/portfolio_form.haml"
+			],
+			[
+				"po",
+				"app/controllers/portfolio_items_controller.rb"
+			],
+			[
+				"hea",
+				"app/views/admin/_header.haml"
+			],
+			[
+				"_head",
+				"app/views/admin/_header.haml"
+			],
+			[
+				"form",
+				"app/views/articles/article_form.haml"
+			],
+			[
+				"portfolio_",
+				"app/views/portfolio_items/portfolio_form.haml"
+			],
+			[
+				"_heade",
+				"app/views/admin/_header.haml"
+			],
+			[
+				"_port",
+				"app/views/pages/_portfolio.haml"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"page",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"articleco",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"article",
+				"app/models/article.rb"
+			],
+			[
+				"about",
+				"app/views/articles/about.haml"
+			],
+			[
+				"ro",
+				"config/routes.rb"
+			],
+			[
+				"pages",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"article-",
+				"app/assets/stylesheets/article-style.css"
+			],
+			[
+				"stly",
+				"app/assets/stylesheets/article-style.css"
+			],
+			[
+				"article-st",
+				"app/assets/stylesheets/article-style.css"
+			],
+			[
+				"atyle.",
+				"public/blog/assets/style2.css"
+			],
+			[
+				"add",
+				"db/migrate/20120813215652_add_content_html_to_article.rb"
+			],
+			[
+				"applicatio",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"image",
+				"app/models/image.rb"
+			],
+			[
+				"create",
+				"db/migrate/20120811232032_create_images.rb"
+			],
+			[
+				"sho",
+				"app/views/articles/show.haml"
+			],
+			[
+				"navi",
+				"app/views/shared/_navigation.haml"
+			],
+			[
+				"admin_h",
+				"app/views/admin/_header.haml"
+			],
+			[
+				"crea",
+				"db/migrate/20120808002254_create_articles.rb"
+			],
+			[
+				"arti",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"edit",
+				"app/views/pages/edit.haml"
+			],
+			[
+				"layou",
+				"app/views/layouts/pages.haml"
+			],
+			[
+				"articles",
+				"public/blog/articles.html"
+			],
+			[
+				"cre",
+				"db/migrate/20120808002254_create_articles.rb"
+			],
+			[
+				"pages_co",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"the",
+				"public/blog/the-constant-procrastination.html"
+			],
+			[
+				"layo",
+				"app/views/layouts/pages.haml"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"skola",
+				"public/blog/assets/skolar.css"
+			],
+			[
+				"cale",
+				"public/view/2012calendar.html"
+			],
+			[
+				"butler",
+				"public/butler.html"
+			],
+			[
+				"lazy",
+				"public/lazy.html"
+			],
+			[
+				"reset",
+				"app/assets/stylesheets/reset.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/einarlove/Sites/Softface/public/softface_magazine.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 247.0,
+	"status_bar_visible": false
+}

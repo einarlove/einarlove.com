@@ -1,0 +1,17 @@
+spritesheets.grass = {
+
+	"file": "sprites/grass.png",
+
+	"width": 1000,
+	"height": 56,
+
+	"hitbox" : {
+		"x": 0,
+		"y": 24,
+		"width": 286,
+		"height":22
+	},
+
+	"animations" : false,
+	"repeat" : "repeat-x"
+}

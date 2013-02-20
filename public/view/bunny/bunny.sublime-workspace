@@ -360,12 +360,15 @@
 	},
 	"file_history":
 	[
-		"/Users/einarlove/Sites/canvas/bunny/js/main.js",
-		"/Users/einarlove/Sites/canvas/bunny/style.css",
 		"/Users/einarlove/Sites/canvas/bunny/index.html",
-		"/Users/einarlove/Sites/canvas/bunny/js/Level.js",
+		"/Users/einarlove/Sites/canvas/bunny/style.css",
 		"/Users/einarlove/Sites/canvas/bunny/js/Game.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Level.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/main.js",
 		"/Users/einarlove/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/einarlove/Sites/canvas/bunny/js/lib/include.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/helpers.js",
+		"/Users/einarlove/Sites/canvas/bunny/js/Bunny.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/levels/one.js",
 		"/Users/einarlove/Sites/canvas/bunny/sprites/spritesheets/carrot.json",
 		"/Users/einarlove/Sites/canvas/bunny/js/levels/two.js",
@@ -384,9 +387,7 @@
 		"/Users/einarlove/Sites/canvas/bunny/js/obstacles/Sky.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/levels/four.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/Camera.js",
-		"/Users/einarlove/Sites/canvas/bunny/js/Bunny.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/levels/_three.js",
-		"/Users/einarlove/Sites/canvas/bunny/js/lib/include.js",
 		"/Users/einarlove/Sites/canvas/bunny/sprites/spritesheets/thorn_bush.json",
 		"/Users/einarlove/Sites/canvas/bunny/js/obstacles/ThornBush.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/obstacles/Trap.js",
@@ -399,7 +400,6 @@
 		"/Users/einarlove/Sites/canvas/bunny/js/lib/Vector.js",
 		"/Users/einarlove/Sites/canvas/bunny/sprites/spritesheets/trap.json",
 		"/Users/einarlove/Dropbox/Einar & Sara/Bunny/The game/sprites/spritesheets/grass.json",
-		"/Users/einarlove/Sites/canvas/bunny/js/helpers.js",
 		"/Users/einarlove/Sites/canvas/bunny/js/Sprite_old.js",
 		"/Users/einarlove/Sites/canvas/bunny/sprites/spritesheets/soil.json",
 		"/Users/einarlove/Sites/canvas/bunny/js/obstacles/soil_and_grass.js",
@@ -508,6 +508,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"255",
 			"0.2",
 			"this",
 			"function",
@@ -634,8 +635,7 @@
 			"var",
 			"obstacle.y",
 			"obstacle.x",
-			"sprite",
-			"width"
+			"sprite"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -720,6 +720,54 @@
 				"js/main.js"
 			],
 			[
+				"l",
+				"js/Level.js"
+			],
+			[
+				"css",
+				"style.css"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"gam",
+				"js/Game.js"
+			],
+			[
+				"in",
+				"index.html"
+			],
+			[
+				"inc",
+				"js/lib/include.js"
+			],
+			[
+				"cs",
+				"style.css"
+			],
+			[
+				"helper",
+				"js/helpers.js"
+			],
+			[
+				"level",
+				"js/Level.js"
+			],
+			[
+				"game",
+				"js/Game.js"
+			],
+			[
+				"bunny",
+				"js/Bunny.js"
+			],
+			[
+				"g",
+				"js/Game.js"
+			],
+			[
 				"style",
 				"style.css"
 			],
@@ -728,16 +776,8 @@
 				"index.html"
 			],
 			[
-				"level",
-				"js/Level.js"
-			],
-			[
 				"levle",
 				"js/levels/one.js"
-			],
-			[
-				"game",
-				"js/Game.js"
 			],
 			[
 				"sprite",
@@ -805,10 +845,6 @@
 			],
 			[
 				"bun",
-				"js/Bunny.js"
-			],
-			[
-				"bunny",
 				"js/Bunny.js"
 			],
 			[
@@ -928,10 +964,6 @@
 				"js/Level.js"
 			],
 			[
-				"helper",
-				"js/helpers.js"
-			],
-			[
 				"det",
 				"js/detectCollision.js"
 			],
@@ -972,10 +1004,6 @@
 				"bunny/js/Obstacle.js"
 			],
 			[
-				"inc",
-				"bunny/js/lib/include.js"
-			],
-			[
 				"coll",
 				"js/detectCollision.js"
 			],
@@ -986,10 +1014,6 @@
 			[
 				"to",
 				"js/levels/two.js"
-			],
-			[
-				"gam",
-				"js/Game.js"
 			],
 			[
 				"even",
@@ -1010,10 +1034,6 @@
 			[
 				"event",
 				"bunny/js/events.js"
-			],
-			[
-				"in",
-				"bunny/js/lib/include.js"
 			],
 			[
 				"king",
@@ -1120,10 +1140,6 @@
 				"js/bug.js"
 			],
 			[
-				"cs",
-				"css/style.css"
-			],
-			[
 				"just",
 				"just-canvas.html"
 			],
@@ -1196,10 +1212,6 @@
 				"db/migrate/20121130100108_addfirst_name_to_users.rb"
 			],
 			[
-				"css",
-				"css/screen.css"
-			],
-			[
 				"",
 				"$$$$/application_controller.rb"
 			],
@@ -1214,18 +1226,6 @@
 			[
 				"portfolio",
 				"app/controllers/portfolio_items_controller.rb"
-			],
-			[
-				"html",
-				"public/500.html"
-			],
-			[
-				"admin",
-				"app/controllers/admin_controller.rb"
-			],
-			[
-				"porto",
-				"app/views/pages/_portfolio.haml"
 			]
 		],
 		"width": 0.0

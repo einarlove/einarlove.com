@@ -25,7 +25,8 @@ Game = function(){
 			bunny = new Bunny(game.currentLevel.startPosition)
 			game.camera.resetTo(bunny);
 			window.location.hash = "#" + levelNumber;
-			_gaq.push(['_trackEvent', 'Level', "start", levelNumber]);
+			console.log(typeof levelNumber);
+			_gaq.push(['_trackEvent', 'Level', "start", levelNumber.toString()]);
 		}
 		else{
 			bunny.reset();

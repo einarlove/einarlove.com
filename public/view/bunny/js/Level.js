@@ -50,7 +50,7 @@ var Level = function(levelNumber){
 	this.reset = function(firstTime){
 		this.resetObstacles();
 		game.changeLevelTo(this.number)
-		if(!firstTime) _gaq.push(['_trackEvent', 'Level', "restart", this.number]);
+		if(!firstTime) _gaq.push(['_trackEvent', 'Level', "restart", this.number.toString()]);
 	}
 
 	this.isLastLevel = function(){

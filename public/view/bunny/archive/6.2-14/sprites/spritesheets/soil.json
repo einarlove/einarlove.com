@@ -1,0 +1,10 @@
+spritesheets.soil = {
+
+	"file": "sprites/soil.png",
+
+	"width": 337,
+	"height": 45,
+
+	"animations" : false,
+	"repeat" : "repeat"
+}

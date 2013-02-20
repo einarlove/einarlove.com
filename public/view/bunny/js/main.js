@@ -1,3 +1,5 @@
+// @Author Einar Löve http://einarlove.com
+
 window.addEventListener("DOMContentLoaded", function(){
 
 	window.overlay = document.querySelector('.start.overlay')
@@ -16,8 +18,10 @@ window.addEventListener("DOMContentLoaded", function(){
 
 	if(browserCompatible)
 		loadAssets();
-	else
+	else{
 		document.querySelector(".incompatible.overlay").classList.add("fadeIn");
+		_gaq.push(['_trackEvent', 'Game', "incompatible"]);
+	}
 
 })
 

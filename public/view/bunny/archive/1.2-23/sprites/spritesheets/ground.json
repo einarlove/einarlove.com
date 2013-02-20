@@ -1,0 +1,10 @@
+spritesheets.ground = {
+
+	"file": "sprites/ground.png",
+
+	"width": 337,
+	"height": 45,
+
+	"animations" : false,
+	"repeat" : "repeat"
+}

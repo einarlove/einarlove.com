@@ -89,7 +89,7 @@ body{
 
 	font-size: 0;
 	cursor: pointer;
-	-webkit-transition: 2s;
+	-webkit-transition: width 2s;
 }
 
 #play_btn:hover{
