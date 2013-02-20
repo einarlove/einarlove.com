@@ -8,14 +8,49 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="overlay hidden">
+
+		<!-- Startscreen -->
+		<div class="start overlay hidden">
+			<div class="btn_underlay"></div>
 			<button id="play_btn" class="disabled">Play</button>
 		</div>
+
+		<div class="incompatible overlay hidden">
+			<h1>Oh no!</h1>
+			<h2>I was not able to support your browser. Sorry!</h2>
+			<p>
+				This is just a prototype, so the game is currently only supported in the Chrome browser.
+			</p>
+			<p>Open this page in Chrome, or download <a href="https://www.google.com/intl/en/chrome/browser/">Chrome Browser</a> if necessary.</p>
+		</div>
+
+		<!-- Credits -->
+		<div class="finished overlay hidden">
+			<h1>Thanks for playing!</h1>
+			<p>This was a prototype for a game concept done as a school project in Game Design.</p>
+			<p>With these four levels in the prototype, I was able to experiment with the game mechanics—like wall jumping and traps—to make interesting level designs, and how to teach the mechanics in a cognitive and experimental manner.</p>
+			<p>My partner was Sara Nilsdóttir Tomter, who was part of the idea creation and process, and stood for most of the graphics.</p>
+			<p>Check out more of my work at <a href="//einarlove.com/portfolio">einarlove.com</a>.</p>
+		</div>
+
+		<!-- Canvas -->
 		<canvas id="myCanvas" width=600 height=700></canvas>
 	</div>
 </body>
 
+<script type="text/javascript">
 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26995819-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

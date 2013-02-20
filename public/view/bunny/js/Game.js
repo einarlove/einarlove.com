@@ -8,8 +8,9 @@ Game = function(){
 		game.currentLevel = new Level(levelNumber || 1);
 		bunny = new Bunny(game.currentLevel.startPosition)
 		game.camera = new Camera();
-		this.restart();
+		this.restart(true);
 		game.draw();
+		_gaq.push(['_trackEvent', 'Game', "start"]);
 	}
 
 	this.restart = function(){
@@ -24,6 +25,7 @@ Game = function(){
 			bunny = new Bunny(game.currentLevel.startPosition)
 			game.camera.resetTo(bunny);
 			window.location.hash = "#" + levelNumber;
+			_gaq.push(['_trackEvent', 'Level', "start", levelNumber]);
 		}
 		else{
 			bunny.reset();
@@ -36,12 +38,18 @@ Game = function(){
 		this.requestRestart = false;
 	}
 
+	this.finished = function(){
+		var finishedOverlay = document.querySelector('.finished.overlay');
+		finishedOverlay.classList.add("fadeIn");
+		this.stopDraw = true;
+		_gaq.push(['_trackEvent', 'Game', "won"]);
+	}
+
 	this.draw = function(){
 		if(this.stopDraw){return;}
 
 		ctx.clearCanvas();
-		webkitRequestAnimationFrame(this.draw.bind(this));
-		// setTimeout(this.draw.bind(this), 1000/1);
+		requestAnimationFrame(this.draw.bind(this));
 		game.frameCounter++;
 
 		game.camera.move();

@@ -1,6 +1,6 @@
 // Script importer with qeue
 // Author: Einar Löve
-function include(files, onComplete) {
+function include(files, onComplete, ticker) {
 
 	files.forEach(function(file){
 		// Download javascript
@@ -21,6 +21,8 @@ function include(files, onComplete) {
 				if(!qeue.length && onComplete)
 					onComplete()
 			})
+			// Call ticker for each finished file
+			if(ticker) ticker(qeue.length);
 		}
 	})
 }

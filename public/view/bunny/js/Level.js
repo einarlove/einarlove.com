@@ -5,6 +5,7 @@ var Level = function(levelNumber){
 	// Copy all properties from level object
 	var levelObject = levels[this.number]();
 
+
 	this.width = levelObject.width
 	this.height = levelObject.height
 
@@ -27,6 +28,10 @@ var Level = function(levelNumber){
 		game.camera.zoomTo = 1.7
 		bunny.playable = false;
 		var nextLevel = this.number + 1;
+		if(this.isLastLevel()){
+			game.finished()
+			return;
+		}
 		setTimeout(function(){
 			game.changeLevelTo(nextLevel)
 		}, 1500)
@@ -42,9 +47,14 @@ var Level = function(levelNumber){
 		})
 	}
 
-	this.reset = function(){
+	this.reset = function(firstTime){
 		this.resetObstacles();
 		game.changeLevelTo(this.number)
+		if(!firstTime) _gaq.push(['_trackEvent', 'Level', "restart", this.number]);
 	}
 
+	this.isLastLevel = function(){
+		if(levels[this.number + 1] !== undefined) return false;
+		else return true;
+	}
 }

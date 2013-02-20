@@ -1,9 +1,6 @@
-
-	"don't be strict yo";
-
 window.addEventListener("DOMContentLoaded", function(){
 
-	window.overlay = document.querySelector('.overlay')
+	window.overlay = document.querySelector('.start.overlay')
 	window.playButton = document.querySelector('#play_btn')
 
 	if(!window.location.hash) overlay.classList.remove("hidden")
@@ -13,13 +10,21 @@ window.addEventListener("DOMContentLoaded", function(){
 		game.start();
 	}
 
+	// Check if browser is Chrome
+	var browserCompatible = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+
+
+	if(browserCompatible)
+		loadAssets();
+	else
+		document.querySelector(".incompatible.overlay").classList.add("fadeIn");
 
 })
 
 
 
 
-window.onload = function(){
+function loadAssets(){
 
 	window.spritesheets = {};
 	window.levels = [];
@@ -65,7 +70,10 @@ window.onload = function(){
 
 		"js/helpers.js",
 		"js/lib/Vector.js",
-	], setup)
+	], setup, function(remainingFiles){
+		var newWidth = (remainingFiles/165) + 165 + "px";
+		playButton.style.width = newWidth;
+	})
 
 
 	hash = window.location.hash.substr(1);
@@ -76,14 +84,12 @@ var setup = function(){
 
 	playButton.classList.remove("disabled")
 
-
 	canvas = getCanvas("#myCanvas");
 	ctx = canvas.ctx;
 
 	game = new Game();
 
 	if(hash){
-
 		var levelNumber = hash
 		game.start(levelNumber);
 	}
