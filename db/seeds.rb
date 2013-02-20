@@ -125,5 +125,17 @@ My group conducted usability evaluation with test users, analysis, design and a 
 		href: "/view/the-5-second-rule/",
 		video: false,
 		visible: true
+	},
+	{
+		title: "Bunny.prototype",
+		body: "This is a game prototype where the goal was to create an innovating concept and develop it to a point where I was able to test and iterate.
+
+With four levels, I was able to experiment with the game mechanics—like wall jumping and traps—to make interesting level designs, and how to teach the mechanics in a cognitive and experimental manner.",
+		image: "bunny-prototype.jpg",
+		involvement: ["Concept", "Rabbit graphics", "Game development"],
+		links: [["The prototype","/view/bunny/"]],
+		href: "/view/bunny/",
+		video: false,
+		visible: true
 	}
 ])
