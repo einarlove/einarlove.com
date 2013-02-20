@@ -8,15 +8,15 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :production do    
-    gem 'pg'  
-end  
-group :development do  
+group :production do
+    gem 'pg'
+end
+group :development do
     gem 'sqlite3'
 end
 
 # Added for templating html
-gem 'haml', '3.1.4'
+gem 'haml', '3.1.7'
 
 # Markdown renderer
 gem 'redcarpet', :git => 'git://github.com/vmg/redcarpet.git'
