@@ -11,7 +11,6 @@ requirejs([
 	"Globe",
 	"Player",
 	"Tree",
-	"grass",
 	"events"
 	], setup)
 
