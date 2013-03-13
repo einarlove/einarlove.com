@@ -88,8 +88,8 @@ function setup(){
 
 	// Import models and store them in their classes
 	loadModels([
-		{file: "TreeGeneric", callback: Tree.loadGeneric},
-		{file: "TreeGenericLower", callback: Tree.loadGenericLower},
+		{file: "treeGeneric", callback: Tree.loadGeneric},
+		{file: "treeGenericLower", callback: Tree.loadGenericLower},
 		{file: "eagle", callback: Player.loadPlayerModel},
 		// {file: "Grass01", callback: Grass.load1},
 		// {file: "Grass02", callback: Grass.load2},
