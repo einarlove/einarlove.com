@@ -11,7 +11,7 @@ function Globe(options){
 	globe.name = "Globe";
 
 	// Load texture and create a pattern of it
-	globe.texture = THREE.ImageUtils.loadTexture( '/js/textures/Texture_Grass.jpg' );
+	globe.texture = THREE.ImageUtils.loadTexture( 'js/textures/Texture_Grass.jpg' );
 	globe.texture.wrapS = globe.texture.wrapT = THREE.RepeatWrapping;
 	globe.texture.repeat.set( 40, 40 );
 
